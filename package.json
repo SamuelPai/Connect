@@ -9,6 +9,9 @@
     "start:prod": "npm run start:prod:react && npm run start:prod:node",
     "start:prod:react": "cd ./client && npm i && npm run build && cd ..",
     "start:prod:node": "npm i && node ./bin/www",
+    "test": "npm run test:controllers && npm run test:routes",
+    "test:controllers": "./node_modules/.bin/mocha \"./controllers/**/*.spec.js\"",
+    "test:routes": "./node_modules/.bin/mocha \"./routes/**/*.spec.js\"",
     "plop": "./node_modules/.bin/plop"
   },
   "dependencies": {
@@ -18,9 +21,12 @@
     "express": "~4.16.1",
     "http-errors": "~1.6.3",
     "jade": "~1.11.0",
+    "mongoose": "^5.7.10",
     "morgan": "~1.9.1"
   },
   "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.2.2",
     "plop": "^2.5.3"
   }
 }
