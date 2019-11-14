@@ -1,0 +1,35 @@
+import React from 'react';
+import { {{pascalCase name}}PageProps } from './{{pascalCase name}}Page.propTypes'
+import { ReactRouterDetails } from '../../components/ReactRouterDetails/ReactRouterDetails.component';
+import styles from './{{pascalCase name}}Page.styles.scss';
+
+export class {{pascalCase name}}Page extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
+
+  componentDidMount() {
+    console.log('componentDidMount()', this.props);
+  }
+
+  componentDidUpdate(prevProps, prevState, prevSnapshot) {
+    console.log('componentDidUpdate(prevProps, prevState, prevSnapshot)', prevProps, prevState, prevSnapshot);
+  }
+
+  render() {
+    return (
+      <div>
+        <h1>{{titleCase name}} Page (Route: {this.props.match.url})</h1>
+        <ReactRouterDetails
+          location={this.props.location}
+          history={this.props.history}
+          match={this.props.match}
+        />
+      </div>
+    );
+  }
+}
+
+{{pascalCase name}}Page.propTypes = {{pascalCase name}}PageProps.propTypes;
+{{pascalCase name}}Page.defaultProps = {{pascalCase name}}PageProps.defaultProps;

@@ -1,0 +1,23 @@
+import React from 'react';
+import { {{pascalCase name}} } from './{{pascalCase name}}.component';
+import { {{pascalCase name}}PropTypes } from './{{pascalCase name}}.propTypes.js';
+import { storiesOf } from '@storybook/react';
+import {
+withKnobs,
+number,
+select,
+color,
+boolean,
+} from '@storybook/addon-knobs';
+
+
+export const {{pascalCase name}}Story = () =>
+
+const {{pascalCase name}}Story = storiesOf('Components/{{pascalCase name}}', module);
+{{pascalCase name}}Story.addDecorator(withKnobs);
+{{pascalCase name}}Story.add('VideoPlayer', () => {
+    const props =
+    return (
+        <{{pascalCase name}} />;
+    );
+});
