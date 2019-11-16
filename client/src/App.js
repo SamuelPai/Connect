@@ -7,12 +7,13 @@ import { About } from './components/About/About.component';
 import { CheeseDetail } from './pages/CheeseDetail/CheeseDetail.component';
 import { ExamplePage } from './pages/ExamplePage/ExamplePage.component';
 import { NoMatch } from './components/NoMatch';
+import { LandingPage} from './pages/LandingPage/LandingPage.component';
 
 function App() {
   return (
     <Router>
       <Switch>
-        <Route exact path="/" component={Home} />
+        <Route exact path="/" component={LandingPage} />
         <Route exact path="/about" component={About} />
         <Route exact path="/cheese/:id" component={CheeseDetail} />
         <Route exact path="/example/:id" component={ExamplePage} />
