@@ -5,6 +5,8 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var cors = require('cors');
 
+var db = require("./models");
+
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
@@ -38,6 +40,10 @@ app.use(function(err, req, res, next) {
     error,
     message: 'Something went wrong on the host'
   })
+});
+
+db.sequelize.sync().then(function() {
+
 });
 
 module.exports = app;
