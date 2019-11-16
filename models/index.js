@@ -33,16 +33,4 @@ Object.keys(db).forEach(function(modelName) {
 db.sequelize = sequelize;
 db.Sequelize = Sequelize;
 
-// models / tables
-// db.activity = require('./activity')(sequelize, Sequelize);
-// db.member = require('./member')(sequelize, Sequelize);
-// db.trip = require('./trip')(sequelize, Sequelize);
-
-// Relations
-// db.trip.hasMany(db.activity);
-// db.trip.hasMany(db.member);
-// db.activity.hasMany(db.member);
-// db.member.hasMany(db.trip);
-// db.member.hasMany(db.activity);
-
 module.exports = db;
