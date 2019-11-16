@@ -7,6 +7,7 @@ import { About } from './components/About/About.component';
 import { CheeseDetail } from './pages/CheeseDetail/CheeseDetail.component';
 import { ExamplePage } from './pages/ExamplePage/ExamplePage.component';
 import { NoMatch } from './components/NoMatch';
+import { LandingPage } from './pages/LandingPage/LandingPage.component';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route exact path="/about" component={About} />
         <Route exact path="/cheese/:id" component={CheeseDetail} />
         <Route exact path="/example/:id" component={ExamplePage} />
+        <Route exact path="/landing" component={LandingPage} />
         <Route component={NoMatch} />
       </Switch>
     </Router>
