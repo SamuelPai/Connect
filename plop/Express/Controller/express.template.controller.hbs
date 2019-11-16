@@ -1,0 +1,61 @@
+
+const create = (req, res) => {
+  // TODO - Implement {{pascalCase name}}.create
+  console.log('{{pascalCase name}}Controller.create');
+  res.json({
+    id: 0,
+    name: 'Test 0'
+  });
+};
+
+const getAll = (req, res) => {
+  // TODO - Implement {{pascalCase name}}.getAll
+  console.log('{{pascalCase name}}Controller.getAll');
+  res.json([
+    {
+      id: 1,
+      name: 'Test 1'
+    },
+    {
+      id: 2,
+      name: 'Test 2'
+    },
+    {
+      id: 3,
+      name: 'Test 3'
+    },
+  ]);
+};
+
+const getById = (req, res) => {
+  // TODO - Implement {{pascalCase name}}.getById
+  const { id } = req.params;
+  console.log('{{pascalCase name}}Controller.getById.id', id);
+  res.json({
+    id
+  });
+};
+
+const updateById = (req, res) => {
+  // TODO - Implement {{pascalCase name}}.updateById
+  const { id } = req.params;
+  console.log('{{pascalCase name}}Controller.getById.id', id);
+  res.json({
+    id
+  });
+};
+
+const deleteById = (req, res) => {
+  // TODO - Implement {{pascalCase name}}.deleteById
+  const { id } = req.params;
+  console.log('{{pascalCase name}}Controller.getById.id', id);
+  res.status(500).end();
+};
+
+module.exports = {
+  create,
+  getById,
+  getAll,
+  updateById,
+  deleteById
+};
