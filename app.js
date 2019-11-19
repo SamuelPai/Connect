@@ -9,6 +9,7 @@ var db = require("./models");
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
+var membersRouter = require("./routes/Members/Members.router");
 
 var app = express();
 // SETUP CORS
@@ -20,8 +21,10 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'client/build')));
 
-app.use('/', indexRouter);
 app.use('/users', usersRouter);
+app.use("/Members", membersRouter);
+app.use('/', indexRouter); //this should be the last imported route
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
