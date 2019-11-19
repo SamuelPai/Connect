@@ -5,7 +5,7 @@ module.exports = (sequelize, DataTypes) => {
     location: DataTypes.STRING,
     notes: DataTypes.STRING
   }, {});
-  Trip.associate = function(models) {
+  Trips.associate = function(models) {
     // associations can be defined here
   };
   return Trips;

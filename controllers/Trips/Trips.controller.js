@@ -9,7 +9,7 @@ const getAll = (req, res) => {
     var tripsObject = {
       trips: dbTrips
     };
-    return res.render("index", tripsObject)
+    return res.json(tripsObject)
   })
 
 };
