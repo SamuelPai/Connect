@@ -6,7 +6,7 @@ module.exports = {
       title: 'fishing charter',
       link: 'http://www.silverkingfishon.com/CharterFishing/Milwaukee',
       notes: 'we should do the half day trip',
-      eventDate:'2022-12-21',
+      eventDate: '2022-12-12',
       confirmed: false,
       votesYes: 2,
       votesNo: 1,

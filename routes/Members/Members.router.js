@@ -9,10 +9,10 @@ router.use(function timeLog (req, res, next) {
 });
 
 // ROUTES
-router.post('/Members', controller.create);
-router.get('/Members', controller.getAll);
-router.get('/Members/:id', controller.getById);
-router.put('/Members/:id', controller.updateById);
-router.delete('/Members/:id', controller.updateById);
+// router.post('/', controller.create);
+router.get('/', controller.getAll);
+// router.get('/Members/:id', controller.getById);
+// router.put('/Members/:id', controller.updateById);
+// router.delete('/Members/:id', controller.updateById);
 
 module.exports = router;
