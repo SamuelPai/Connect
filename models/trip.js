@@ -13,10 +13,10 @@ module.exports = function(sequelize, DataTypes) {
       location: {
         type: DataTypes.STRING,
       },
-      description: {
+      tripDescription: {
         type: DataTypes.STRING,
       },
-      date: {
+      tripDate: {
           type: DataTypes.DATE,
       },
       image: {

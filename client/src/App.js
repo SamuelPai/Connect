@@ -7,16 +7,8 @@ import { CheeseDetail } from './pages/CheeseDetail/CheeseDetail.component';
 import { ExamplePage } from './pages/ExamplePage/ExamplePage.component';
 import { NoMatch } from './components/NoMatch';
 import { LandingPage } from './pages/LandingPage/LandingPage.component';
-<<<<<<< HEAD
-<<<<<<< HEAD
 import Profile from "./components/Profile/Profile";
 import PrivateRoute from "./components/PrivateRoute/PrivateRoute";
-
-
-=======
->>>>>>> f40a1d6b4bc1124e98cd2d4d38279d54271a4553
-=======
->>>>>>> f40a1d6b4bc1124e98cd2d4d38279d54271a4553
 
 function App() {
   
