@@ -9,6 +9,7 @@ var db = require("./models");
 
 var usersRouter = require('./routes/Members/Members.router');
 var tripRouter = require('./routes/trips/Trips.router');
+var activityRouter = require('./routes/Activity/Activity.router');
 var indexRouter = require('./routes/index');
 
 var app = express();
@@ -23,6 +24,7 @@ app.use(express.static(path.join(__dirname, 'client/build')));
 
 app.use('/api/users', usersRouter);
 app.use('/api/trips', tripRouter);
+app.use('/api/activities', activityRouter);
 app.use('/', indexRouter); //this should be the last imported route
 
 
