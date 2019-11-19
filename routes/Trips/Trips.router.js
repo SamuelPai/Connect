@@ -9,10 +9,10 @@ router.use(function timeLog (req, res, next) {
 });
 
 // ROUTES
-router.post('/Trips', controller.create);
-router.get('/Trips', controller.getAll);
-router.get('/Trips/:id', controller.getById);
-router.put('/Trips/:id', controller.updateById);
-router.delete('/Trips/:id', controller.updateById);
+router.get('/', controller.getAll);
+// router.post('/Trips', controller.create);
+// router.get('/Trips/:id', controller.getById);
+// router.put('/Trips/:id', controller.updateById);
+// router.delete('/Trips/:id', controller.updateById);
 
 module.exports = router;

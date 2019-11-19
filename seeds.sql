@@ -18,7 +18,7 @@ VALUES (
         "http://amconshows.com/_website/wp-content/uploads/2018/08/p-768x440.jpeg"
     );
 
-INSERT INTO member (firstName, lastName, email, phoneNumber, image) VALUES (
+INSERT INTO Members (firstName, lastName, email, phoneNumber, image) VALUES (
         "Jeremy", 
         "Wade", 
         "jeremywade@example.com",  

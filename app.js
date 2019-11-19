@@ -7,9 +7,9 @@ var cors = require('cors');
 
 var db = require("./models");
 
-var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
-var membersRouter = require("./routes/Members/Members.router");
+var tripRouter = require('./routes/trips/Trips.router')
+var indexRouter = require('./routes/index');
 
 var app = express();
 // SETUP CORS
@@ -22,7 +22,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'client/build')));
 
 app.use('/users', usersRouter);
-app.use("/Members", membersRouter);
+app.use('/trips', tripRouter);
 app.use('/', indexRouter); //this should be the last imported route
 
 
