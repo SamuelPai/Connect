@@ -16,7 +16,7 @@ module.exports = function(sequelize, DataTypes) {
       notes: {
         type: DataTypes.STRING,
       },
-      date: {
+      eventDate: {
           type: DataTypes.DATE,
       },
       confirmed: {
