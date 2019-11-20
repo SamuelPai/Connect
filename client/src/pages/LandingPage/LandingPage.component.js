@@ -1,8 +1,10 @@
 import React from 'react';
-import { LandingPageProps } from './LandingPage.propTypes'
+import { LandingPageProps } from './LandingPage.propTypes';
+
 import { ReactRouterDetails } from '../../components/ReactRouterDetails/ReactRouterDetails.component';
 import styles from './LandingPage.styles.scss';
 import LoginButton from "../../components/LoginButton/LoginButton";
+import Carousel from "../../components/Carousel/Carousel";
 
 
 export class LandingPage extends React.Component {
@@ -24,7 +26,11 @@ export class LandingPage extends React.Component {
     return (
       <div>
         <LoginButton />
+        <div>
+        <Carousel/>
+        </div>
       </div>
+      
     );
   }
 }
