@@ -9,7 +9,7 @@ router.use(function timeLog (req, res, next) {
 });
 
 // ROUTES
-// router.post('/', controller.create);
+router.post('/', controller.create);
 router.get('/', controller.getAll);
 // router.get('/Members/:id', controller.getById);
 // router.put('/Members/:id', controller.updateById);
