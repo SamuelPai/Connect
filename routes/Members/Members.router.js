@@ -12,7 +12,7 @@ router.use(function timeLog (req, res, next) {
 router.post('/', controller.create);
 router.get('/', controller.getAll);
 router.get('/:id', controller.getById);
-// router.put('/Members/:id', controller.updateById);
+router.put('/:id', controller.updateById);
 // router.delete('/Members/:id', controller.updateById);
 
 module.exports = router;
