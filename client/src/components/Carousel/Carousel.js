@@ -10,24 +10,23 @@ import {
 
 const items = [
   {
-    src:  '/images/join.jpg',
+    src:  '/images/explore.jpg',
     altText: 'Slide 1',
-    caption: 'Plan your Event',
+    caption: 'Plan an Event',
     header: 'Create a Trip '
   },
   {
-    src: '/images/explore.jpg',
+    src: '/images/join.jpg',
     altText: 'Slide 2',
-    caption: 'Call your Friends and Family',
-    header: 'Reunite with a Loved One'
+    header: 'Reunite with a Loved Ones',
+    caption: 'Call your Colleagues, Friends and Family'
   },
   {
-    src: '/images/connect.jpg',
+    src: '/images/star.jpg',
     altText: 'Slide 3',
-    caption: 'Plan your Day',
-    header: 'Plan your activity',
-
-  }
+    header: 'Plan an activity,Make a Memmory',
+    caption: 'Plan your Day'
+  },
 ];
 
 const Example = (props) => {
@@ -79,7 +78,7 @@ const Example = (props) => {
 }
 
 export default Example;
-// =========================
+
 
 
   
