@@ -43,13 +43,8 @@ const Example = props => {
               </DropdownMenu>
             </UncontrolledDropdown> */}
         </Nav>
-        <div class="logo text-center">
-          <img
-            src="C:\Users\divya\Desktop\ucsd\connect\client\public\image\logo512.png"
-            alt="logo"
-            width="50"
-            height="40"
-          ></img>
+        <div class="logo">
+          <img src="/image/logo.png" alt="logo" width="150" height="40"></img>
         </div>
 
         {/* </Collapse> */}

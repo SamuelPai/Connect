@@ -2,12 +2,9 @@ import React from "react";
 import { LandingPageProps } from "./LandingPage.propTypes";
 
 import { ReactRouterDetails } from "../../components/ReactRouterDetails/ReactRouterDetails.component";
-import styles from "./LandingPage.styles.scss";
-import LoginButton from "../../components/LoginButton/LoginButton";
+
 import NavBar from "../NavBar/Navbar";
 import FooterPage from "../FooterPage/Footer";
-import Carousel from "../../components/Carousel/Carousel";
-import LikeApp from "../LikeApp/Likeapp";
 
 export class LandingPage extends React.Component {
   constructor(props) {

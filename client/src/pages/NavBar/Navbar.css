@@ -2,9 +2,10 @@
   background: rgb(6, 236, 94);
   color: white;
 }
-.navbar-link {
-  color: black;
-}
-.logo text-center {
+
+.logo {
   text-align: center;
+  display: block;
+  margin-left: 20%;
+  margin-right: auto;
 }
