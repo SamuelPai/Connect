@@ -1,11 +1,16 @@
 import React from 'react';
-import { LandingPageProps } from './LandingPage.propTypes';
+import {
+  LandingPageProps
+} from './LandingPage.propTypes';
 
-import { ReactRouterDetails } from '../../components/ReactRouterDetails/ReactRouterDetails.component';
+import {
+  ReactRouterDetails
+} from '../../components/ReactRouterDetails/ReactRouterDetails.component';
 import styles from './LandingPage.styles.scss';
 import LoginButton from "../../components/LoginButton/LoginButton";
 import Carousel from "../../components/Carousel/Carousel";
-
+import 'bootstrap/dist/css/bootstrap.min.css';
+// import Images from "../../components/Carousel/Images";
 
 export class LandingPage extends React.Component {
   constructor(props) {
@@ -20,18 +25,17 @@ export class LandingPage extends React.Component {
   componentDidUpdate(prevProps, prevState, prevSnapshot) {
     console.log('componentDidUpdate(prevProps, prevState, prevSnapshot)', prevProps, prevState, prevSnapshot);
   }
-  
+
 
   render() {
-    return (
-      <div>
-        <LoginButton />
-        <div>
-        <Carousel/>
-        </div>
-      </div>
-      
-    );
+    return ( 
+      <div >
+      <LoginButton />
+      <div >
+      <Carousel />
+      </div> 
+      </div >
+    )
   }
 }
 
