@@ -10,7 +10,7 @@ import styles from './LandingPage.styles.scss';
 import LoginButton from "../../components/LoginButton/LoginButton";
 import Carousel from "../../components/Carousel/Carousel";
 import 'bootstrap/dist/css/bootstrap.min.css';
-// import Images from "../../components/Carousel/Images";
+
 
 export class LandingPage extends React.Component {
   constructor(props) {
@@ -29,14 +29,15 @@ export class LandingPage extends React.Component {
 
   render() {
     return ( 
-      <div >
+      <div className ="loginButton" >
       <LoginButton />
-      <div >
+           <div className ="carousel">
+           
       <Carousel />
       </div> 
-      </div >
-    )
-  }
+      </div>
+      )
+  };
 }
 
 LandingPage.propTypes = LandingPageProps.propTypes;
