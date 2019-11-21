@@ -13,14 +13,20 @@ const getAll = (req, res) => {
   })
 };
 
-// const create = (req, res) => {
-//   // TODO - Implement Members.create
-//   console.log('MembersController.create');
-//   res.json({
-//     id: 0,
-//     name: 'Test 0'
-//   });
-// };
+const create = (req, res) => {
+  // TODO - Implement Members.create
+  console.log('MembersController.create');
+  db.User.create({
+    firstName: "req.body.firstName",
+    lastName: "req.body.lastName",
+    email: "req.body.email",
+    phoneNumber: "req.body.phoneNumber",
+    image: "req.body.image"
+  })
+  .then(function(dbUser) {
+    res.json(dbUser);
+  });
+};
 
 
 // const getById = (req, res) => {
@@ -50,7 +56,7 @@ const getAll = (req, res) => {
 
 module.exports = {
   getAll,
-  // create,
+  create,
   // getById,
   // updateById,
   // deleteById
