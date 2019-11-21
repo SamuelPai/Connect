@@ -29,14 +29,19 @@ const getAll = (req, res) => {
 //   },
 // ]);
 
-// const create = (req, res) => {
-//   // TODO - Implement Trips.create
-//   console.log('TripsController.create');
-//   res.json({
-//     id: 0,
-//     name: 'Test 0'
-//   });
-// };
+const create = (req, res) => {
+  // TODO - Implement Trips.create
+    db.Trips.create({
+    title: req.body.title,
+    location: req.body.location,
+    description: req.body.description,
+    date: req.body.date,
+    image: req.body.image
+    }).then(function(dbTrips) {
+      res.json(dbTrips);
+    });
+  };
+
 
 // const getById = (req, res) => {
 //   // TODO - Implement Trips.getById
@@ -64,8 +69,8 @@ const getAll = (req, res) => {
 // };
 
 module.exports = {
-  getAll
-  // create,
+  getAll,
+  create
   // getById,
   // updateById,
   // deleteById
