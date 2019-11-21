@@ -7,7 +7,6 @@ import { CheeseDetail } from "./pages/CheeseDetail/CheeseDetail.component";
 import { ExamplePage } from "./pages/ExamplePage/ExamplePage.component";
 import { NoMatch } from "./components/NoMatch";
 import { LandingPage } from "./pages/LandingPage/LandingPage.component";
-
 import Profile from "./components/Profile/Profile";
 import PrivateRoute from "./components/PrivateRoute/PrivateRoute";
 
