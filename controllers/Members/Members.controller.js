@@ -50,16 +50,23 @@ const updateById = (req, res) => {
   })
 };
 
-// const deleteById = (req, res) => {
-//   const { id } = req.params;
-//   console.log('MembersController.getById.id', id);
-//   res.status(500).end();
-// };
+const deleteById = (req, res) => {
+  const { id } = req.params;
+  db.User.destroy({
+    where: {
+      id: id
+    }
+  })
+  .then(function(dbUser){
+    res.json(dbUser);
+    res.status(500).end();
+  })
+};
 
 module.exports = {
   getAll,
   create,
   getById,
   updateById,
-  // deleteById
+  deleteById
 };
