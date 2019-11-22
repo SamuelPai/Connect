@@ -1,5 +1,6 @@
 var db = require('../../models');
 
+var db = require('../../models');
 const getAll = (req, res) => {
   db.User.findAll({ 
   })
@@ -10,7 +11,6 @@ const getAll = (req, res) => {
     return res.json(usersObject)
   })
 };
-
 const create = (req, res) => {
   db.User.create({
     nickName: req.body.nickName,
@@ -46,7 +46,6 @@ const updateById = (req, res) => {
     res.json(dbUser)
   })
 };
-
 const deleteById = (req, res) => {
   const { id } = req.params;
   db.User.destroy({
@@ -59,7 +58,6 @@ const deleteById = (req, res) => {
     res.status(500).end();
   })
 };
-
 module.exports = {
   getAll,
   create,
@@ -67,3 +65,8 @@ module.exports = {
   updateById,
   deleteById
 };
+
+
+
+
+

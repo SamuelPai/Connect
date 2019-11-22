@@ -6,6 +6,7 @@ module.exports = {
       email: 'johnnyboy@gmail.com',
       createdAt: new Date(),
       updatedAt: new Date()
+      
     }], {});
   },
   down: (queryInterface, Sequelize) => {

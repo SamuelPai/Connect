@@ -26,12 +26,9 @@ export class MyTripPagePage extends React.Component {
   render() {
     return (
       <div>
-        <h1>My Trip Page Page (Route: {this.props.match.url})</h1>
-        <ReactRouterDetails
-          location={this.props.location}
-          history={this.props.history}
-          match={this.props.match}
-        />
+        <NavBar></NavBar>
+        <h1>My Trip Page (Route: {this.props.match.url})</h1>
+       
       </div>
     );
   }

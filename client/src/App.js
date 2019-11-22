@@ -9,6 +9,9 @@ import { NoMatch } from './components/NoMatch';
 import { LandingPage } from './pages/LandingPage/LandingPage.component';
 import Profile from "./components/Profile/Profile";
 import PrivateRoute from "./components/PrivateRoute/PrivateRoute";
+import {MyTripPagePage} from "./pages/MyTripPagePage/MyTripPagePage.component";
+import {CalendarPage} from "./pages/CalendarPage/CalendarPage.component";
+import {SearchPage} from "./pages/SearchPage/SearchPage.component";
 
 function App() {
   
@@ -21,6 +24,9 @@ function App() {
         <Route exact path="/cheese/:id" component={CheeseDetail} />
         <Route exact path="/example" component={ExamplePage} />
         <Route exact path="/landing" component={LandingPage} />
+        <Route exact path="/mytrips" component={MyTripPagePage} />
+        <Route exact path="/search" component={SearchPage} />
+        <Route exact path="/calendar" component={CalendarPage} /> 
         <Route component={NoMatch} />
       </Switch>
     </Router>
