@@ -1,35 +1,42 @@
-import React from 'react';
-import { ExamplePageProps } from './ExamplePage.propTypes'
-import { ReactRouterDetails } from '../../components/ReactRouterDetails/ReactRouterDetails.component';
-import styles from './ExamplePage.styles.scss';
+import React from "react";
+import Example from "../../components/Example/Example.component";
+import friends from '../../utils/friends.json';
+import tripAPI from '../../utils/tripAPI';
 
 export class ExamplePage extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
+  // Setting this.state.friends to the friends json array
+  state = {
+    trips: []
+  };
 
   componentDidMount() {
-    console.log('componentDidMount()', this.props);
+    this.getTrips();
   }
 
-  componentDidUpdate(prevProps, prevState, prevSnapshot) {
-    console.log('componentDidUpdate(prevProps, prevState, prevSnapshot)', prevProps, prevState, prevSnapshot);
-  }
+  getTrips = () => {
+    tripAPI.getTrips()
+      .then(res => {
+        var tripArray = res.data.trips
+        console.log(tripArray);
+        this.setState({ trips: tripArray })
+      })
+      .catch(err => console.log(err));
+  };
 
   render() {
     return (
       <div>
-        <h1>Example Page (Route: {this.props.match.url})</h1>
-        <ReactRouterDetails
-          location={this.props.location}
-          history={this.props.history}
-          match={this.props.match}
-        />
+        {this.state.trips.map(trip => (
+          <Example
+            id={trip.id}
+            key={trip.id}
+            title={trip.title}
+            image={trip.image}
+            Description={trip.Description}
+            location={trip.location}
+          />
+        ))}
       </div>
     );
-  }
+  } 
 }
-
-ExamplePage.propTypes = ExamplePageProps.propTypes;
-ExamplePage.defaultProps = ExamplePageProps.defaultProps;

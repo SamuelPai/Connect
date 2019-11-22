@@ -1,49 +1,73 @@
 var db = require('../../models');
-// const create = (req, res) => {
-//   // TODO - Implement Activity.create
-//   console.log('ActivityController.create');
-//   res.json({
-//     id: 0,
-//     name: 'Test 0'
-//   });
-// };
+
 const getAll = (req, res) => {
- // TODO - Implement Activity.getAll
- console.log('ActivityController.getAll');
- db.Activity.findAll({
- }).then(function(dbActivity) {
-   var activityObject = {
-     Activity: dbActivity
-   };
-   return res.json(activityObject)
- })
+  db.Activity.findAll({ 
+  })
+  .then(function(dbActivity) {
+    var activityObject = {
+      activity: dbActivity
+    };
+    return res.json(activityObject)
+  })
 };
-// const getById = (req, res) => {
-//   // TODO - Implement Activity.getById
-//   const { id } = req.params;
-//   console.log('ActivityController.getById.id', id);
-//   res.json({
-//     id
-//   });
-// };
-// const updateById = (req, res) => {
-//   // TODO - Implement Activity.updateById
-//   const { id } = req.params;
-//   console.log('ActivityController.getById.id', id);
-//   res.json({
-//     id
-//   });
-// };
-// const deleteById = (req, res) => {
-//   // TODO - Implement Activity.deleteById
-//   const { id } = req.params;
-//   console.log('ActivityController.getById.id', id);
-//   res.status(500).end();
-// };
+
+const create = (req, res) => {
+  db.Activity.create({
+    title: "req.body.title",
+    link: "req.body.link",
+    notes: "req.body.notes",
+    eventDate: '2022-12-12',
+    confirmed: true,
+    votesYes: 2,
+    votesNo: 1
+  })
+  .then(function(dbActivity) {
+    res.json(dbActivity);
+  });
+};
+
+const getById = (req, res) => {
+  const { id } = req.params;
+  db.Activity.findOne({
+    where: {
+      id: id
+    }
+  })
+  .then(function(dbActivity) {
+    res.json({
+      dbActivity
+    })
+  });
+};
+
+const updateById = (req, res) => {
+  const { id } = req.params;
+  db.Activity.update(req.body, {
+    where: {
+      id: id
+    }
+  })
+  .then(function(dbActivity){
+    res.json(dbActivity)
+  })
+};
+
+const deleteById = (req, res) => {
+  const { id } = req.params;
+  db.Activity.destroy({
+    where: {
+      id: id
+    }
+  })
+  .then(function(dbActivity){
+    res.json(dbActivity);
+  })
+};
+
 module.exports = {
- // create,
- // getById,
- getAll
- // updateById,
- // deleteById
+  getAll,
+  create,
+  getById,
+  updateById,
+  deleteById
 };

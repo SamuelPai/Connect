@@ -1,3 +1,5 @@
+use reunion;
+
 INSERT INTO Activities (title, link, notes, eventDate, confirmed, votesYes, votesNo) VALUES (
 		
         "fishing charter", 

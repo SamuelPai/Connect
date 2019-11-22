@@ -2,7 +2,7 @@ var db = require('../../models');
 
 var db = require('../../models');
 const getAll = (req, res) => {
-  db.User.findAll({
+  db.User.findAll({ 
   })
   .then(function(dbUsers) {
     var usersObject = {
@@ -12,20 +12,14 @@ const getAll = (req, res) => {
   })
 };
 const create = (req, res) => {
-  // TODO - Implement Members.create
-  console.log('MembersController.create');
   db.User.create({
-    // firstName: req.body.firstName,
     nickName: req.body.nickName,
     email: req.body.email
-    // phoneNumber: req.body.phoneNumber,
-    // image: req.body.image
   })
   .then(function(dbUser) {
     res.json(dbUser);
   });
 };
-
 
 const getById = (req, res) => {
   const { id } = req.params;
@@ -40,6 +34,7 @@ const getById = (req, res) => {
     })
   });
 };
+
 const updateById = (req, res) => {
   const { id } = req.params;
   db.User.update(req.body, {
@@ -70,17 +65,6 @@ module.exports = {
   updateById,
   deleteById
 };
-
-
-module.exports = {
-  getAll,
-  create,
-  getById,
-  updateById,
-  deleteById
-};
-
-
 
 
 
