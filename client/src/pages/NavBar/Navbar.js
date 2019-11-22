@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Navbar.css";
+import {MyTripPagePage} from "../MyTripPagePage/MyTripPagePage.component.js";
 
 import { Navbar, NavbarBrand, Nav, NavItem, NavLink } from "reactstrap";
 
@@ -20,16 +21,16 @@ const Example = props => {
         <Collapse isOpen={isOpen} navbar> */}
         <Nav className="mr-auto" navbar>
           <NavItem>
-            <NavLink href="../components/Home">HOME</NavLink>
+            <NavLink href="/">HOME</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink href="/components/AddTrip">TRIP</NavLink>
+            <NavLink href="/mytrips">TRIP</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink href="../pages/calenderpage">CALANDER</NavLink>
+            <NavLink href="/calendar">CALENDAR</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink href="/components/AddTrip">VOTE</NavLink>
+            <NavLink href="/search">SEARCH</NavLink>
           </NavItem>
           {/* <UncontrolledDropdown nav inNavbar>
               <DropdownToggle nav caret>
