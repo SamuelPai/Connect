@@ -1,0 +1,11 @@
+.navbar {
+  background: rgb(6, 236, 94);
+  color: white;
+}
+
+.logo {
+  text-align: center;
+  display: block;
+  margin-left: 20%;
+  margin-right: auto;
+}
