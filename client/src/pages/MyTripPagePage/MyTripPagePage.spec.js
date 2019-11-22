@@ -1,19 +1,16 @@
 import React from 'react';
-
 import { shallow } from 'enzyme';
-import { Landing } from '.';
+import { MyTripPage } from '.';
 
-
-describe('Landing Component', () => {
+describe('MyTripPage Component', () => {
   let wrapper;
   beforeEach(() => {
     wrapper = shallow(
-   <Landing />
-  
-  
+      <MyTripPage />
+    );
   });
 
-  it('should render Landing', () => {
+  it('should render MyTripPage', () => {
     expect(wrapper).toBeDefined();
   });
 });

@@ -1,6 +1,6 @@
 import ReactRouterPropTypes from 'react-router-prop-types';
 
-export const LandingPageProps = {
+export const MyTripPagePageProps = {
   propTypes: {
     location: ReactRouterPropTypes.location.isRequired,
     history: ReactRouterPropTypes.history.isRequired,

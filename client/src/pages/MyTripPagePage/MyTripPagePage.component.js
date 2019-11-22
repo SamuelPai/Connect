@@ -1,12 +1,10 @@
 import React from "react";
-import { LandingPageProps } from "./LandingPage.propTypes";
-
+import { MyTripPagePageProps } from "./MyTripPagePage.propTypes";
 import { ReactRouterDetails } from "../../components/ReactRouterDetails/ReactRouterDetails.component";
-
+import styles from "./MyTripPagePage.styles.scss";
 import NavBar from "../NavBar/Navbar";
-import FooterPage from "../FooterPage/Footer";
 
-export class LandingPage extends React.Component {
+export class MyTripPagePage extends React.Component {
   constructor(props) {
     super(props);
     this.state = {};
@@ -28,25 +26,16 @@ export class LandingPage extends React.Component {
   render() {
     return (
       <div>
-        <NavBar />
-
-        <div>
-          <Carousel />
-          <div>
-            <LoginButton />
-            <div>
-              <LikeApp />
-
-              <div>
-                <FooterPage />
-              </div>
-            </div>
-          </div>
-        </div>
+        <h1>My Trip Page Page (Route: {this.props.match.url})</h1>
+        <ReactRouterDetails
+          location={this.props.location}
+          history={this.props.history}
+          match={this.props.match}
+        />
       </div>
     );
   }
 }
 
-LandingPage.propTypes = LandingPageProps.propTypes;
-LandingPage.defaultProps = LandingPageProps.defaultProps;
+MyTripPagePage.propTypes = MyTripPagePageProps.propTypes;
+MyTripPagePage.defaultProps = MyTripPagePageProps.defaultProps;
