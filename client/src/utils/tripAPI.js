@@ -1,8 +1,7 @@
 import axios from 'axios';
 
 export default class tripAPI {
-	static getTrips(trips) {
-		console.log('getTrip', trips);
+	static getTrips() {
 		return axios.get(`/api/trips`);
 	}
 }

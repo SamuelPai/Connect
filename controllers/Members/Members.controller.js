@@ -13,11 +13,8 @@ const getAll = (req, res) => {
 
 const create = (req, res) => {
   db.User.create({
-    firstName: req.body.firstName,
-    lastName: req.body.lastName,
-    email: req.body.email,
-    phoneNumber: req.body.phoneNumber,
-    image: req.body.image
+    nickName: req.body.nickName,
+    email: req.body.email
   })
   .then(function(dbUser) {
     res.json(dbUser);
