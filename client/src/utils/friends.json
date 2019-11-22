@@ -1,0 +1,18 @@
+[
+  {
+  "id": 1,
+  "title": "Fishing trip",
+  "location": "Florida Keys",
+  "Description": "I want to catch a shark!",
+  "date": "2022-12-12",
+  "image": "https://www.visitflorida.com/content/dam/visitflorida/en-us/images/cities/miami/0551-Sole0028_1.jpg.570.300.rendition"
+  },
+  {
+  "id": 2,
+  "title": "Maimi trip",
+  "location": "Miami Florida",
+  "Description": "Clubin",
+  "date": "2021-12-12",
+  "image": "https://www.visitflorida.com/content/dam/visitflorida/en-us/images/cities/miami/0551-Sole0028_1.jpg.570.300.rendition"
+  }
+]
