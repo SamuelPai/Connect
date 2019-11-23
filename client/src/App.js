@@ -11,6 +11,7 @@ import Profile from "./components/Profile/Profile";
 import PrivateRoute from "./components/PrivateRoute/PrivateRoute";
 import { MyTripPagePage } from "./pages/MyTripPagePage/MyTripPagePage.component";
 import MyTrip from "./components/MyTrip/MyTrip";
+import NavBar from "./pages/NavBar/Navbar";
 function App() {
   return (
     <Router>
@@ -22,6 +23,7 @@ function App() {
         <Route exact path="/example/:id" component={ExamplePage} />
         <Route exact path="/landing" component={LandingPage} />
         <Route exact path="/MyTrip" component={MyTrip} />
+        <Route exact path="/NavBar" component={NavBar} />
         <Route component={NoMatch} />
       </Switch>
     </Router>

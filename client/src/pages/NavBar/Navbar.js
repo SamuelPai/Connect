@@ -20,16 +20,16 @@ const Example = props => {
         <Collapse isOpen={isOpen} navbar> */}
         <Nav className="mr-auto" navbar>
           <NavItem>
-            <NavLink href="../components/Home">HOME</NavLink>
+            <NavLink href="/Home">HOME</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink href="/components/AddTrip">TRIP</NavLink>
+            <NavLink href="/MyTrip">TRIP</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink href="../pages/calenderpage">CALANDER</NavLink>
+            <NavLink href="/calenderpage">CALANDER</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink href="/components/AddTrip">VOTE</NavLink>
+            <NavLink href="/Search">Search</NavLink>
           </NavItem>
           {/* <UncontrolledDropdown nav inNavbar>
               <DropdownToggle nav caret>

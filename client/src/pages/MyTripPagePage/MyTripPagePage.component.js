@@ -3,6 +3,7 @@ import { MyTripPagePageProps } from "./MyTripPagePage.propTypes";
 import { ReactRouterDetails } from "../../components/ReactRouterDetails/ReactRouterDetails.component";
 import styles from "./MyTripPagePage.styles.scss";
 import Jumbotron from "../../components/MyTrip/MyTrip";
+import { Container, Row, Col, Button } from "reactstrap";
 
 export class MyTripPagePage extends React.Component {
   constructor(props) {
@@ -27,6 +28,9 @@ export class MyTripPagePage extends React.Component {
     return (
       <div>
         <Jumbotron />
+        <Row />
+        <Container />
+        <Col />
       </div>
     );
   }

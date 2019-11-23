@@ -1,6 +1,6 @@
 import React from "react";
 import "./MyTrip.css";
-import NavBar from "../NavBar/Navbar";
+
 import { Jumbotron, Container, Row, Col, Button } from "reactstrap";
 
 const MyTrip = props => {
@@ -14,12 +14,19 @@ const MyTrip = props => {
           <Col md={{ span: 6, offset: 6 }}>MY TRIP</Col>
         </Row>
       </Container>
-      <Jumbotron className="display-3">
+
+      <Row>
+        {/* <Col xs="6" sm="4">
+          gdf
+        </Col> */}
+        <Col xs="6" sm="4">
+          Description venu:
+        </Col>
+        <Col sm="4">Who is coming</Col>
+      </Row>
+
+      <Jumbotron>
         <h1 className="display-3">Fluid jumbotron</h1>
-        {/* <p className="lead">
-          This is a modified jumbotron that occupies the entire horizontal space
-          of its parent.
-        </p> */}
       </Jumbotron>
     </div>
   );
