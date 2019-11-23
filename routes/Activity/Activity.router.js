@@ -7,9 +7,9 @@ router.use(function timeLog (req, res, next) {
  next();
 });
 // ROUTES
-// router.post('/Activity', controller.create);
+router.post('/', controller.create);
 router.get('/', controller.getAll);
-// router.get('/Activity/:id', controller.getById);
-// router.put('/Activity/:id', controller.updateById);
-// router.delete('/Activity/:id', controller.updateById);
+router.get('/:id', controller.getById);
+router.put('/:id', controller.updateById);
+router.delete('/:id', controller.updateById);
 module.exports = router;
