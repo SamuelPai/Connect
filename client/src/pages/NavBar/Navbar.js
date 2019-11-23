@@ -21,16 +21,16 @@ const Example = props => {
         <Collapse isOpen={isOpen} navbar> */}
         <Nav className="mr-auto" navbar>
           <NavItem>
-            <NavLink href="/">HOME</NavLink>
+            <NavLink href="/Home">HOME</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink href="/mytrips">TRIP</NavLink>
+            <NavLink href="/MyTrip">TRIP</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink href="/calendar">CALENDAR</NavLink>
+            <NavLink href="/calenderpage">CALANDER</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink href="/search">SEARCH</NavLink>
+            <NavLink href="/Search">Search</NavLink>
           </NavItem>
           {/* <UncontrolledDropdown nav inNavbar>
               <DropdownToggle nav caret>
@@ -45,7 +45,7 @@ const Example = props => {
             </UncontrolledDropdown> */}
         </Nav>
         <div class="logo">
-          <img src="/image/logo.png" alt="logo" width="150" height="40"></img>
+          <img src="/images/logo.png" alt="logo" width="150" height="40"></img>
         </div>
 
         {/* </Collapse> */}

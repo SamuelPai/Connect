@@ -2,7 +2,8 @@ import React from "react";
 import { MyTripPagePageProps } from "./MyTripPagePage.propTypes";
 import { ReactRouterDetails } from "../../components/ReactRouterDetails/ReactRouterDetails.component";
 import styles from "./MyTripPagePage.styles.scss";
-import NavBar from "../NavBar/Navbar";
+import Jumbotron from "../../components/MyTrip/MyTrip";
+import { Container, Row, Col, Button } from "reactstrap";
 
 export class MyTripPagePage extends React.Component {
   constructor(props) {
@@ -26,9 +27,10 @@ export class MyTripPagePage extends React.Component {
   render() {
     return (
       <div>
-        <NavBar></NavBar>
-        <h1>My Trip Page (Route: {this.props.match.url})</h1>
-       
+        <Jumbotron />
+        <Row />
+        <Container />
+        <Col />
       </div>
     );
   }
