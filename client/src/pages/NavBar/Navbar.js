@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Navbar.css";
+import {MyTripPagePage} from "../MyTripPagePage/MyTripPagePage.component.js";
 
 import { Navbar, NavbarBrand, Nav, NavItem, NavLink } from "reactstrap";
 
