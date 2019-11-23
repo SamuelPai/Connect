@@ -3,7 +3,7 @@ module.exports = (sequelize, DataTypes) => {
   const Trips = sequelize.define('Trips', {
     title: DataTypes.STRING,
     location: DataTypes.STRING,
-    Description: DataTypes.STRING,
+    description: DataTypes.STRING,
     date: DataTypes.DATEONLY,
     image: DataTypes.STRING
   }, {});
