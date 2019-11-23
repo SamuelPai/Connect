@@ -18,6 +18,7 @@ function App() {
 
   return (
     <Router>
+      
       <Switch>
         <Route exact path="/" component={LandingPage} />
         <PrivateRoute path="/profile" component={Profile} />

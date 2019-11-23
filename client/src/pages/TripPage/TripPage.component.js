@@ -2,7 +2,9 @@ import React from 'react';
 import { TripPageProps } from './TripPage.propTypes'
 import { ReactRouterDetails } from '../../components/ReactRouterDetails/ReactRouterDetails.component';
 import styles from './TripPage.styles.scss';
-import Form from '../../components/Trip/Trip';
+import Trip from '../../components/Trip/Trip'
+
+
 
 export class TripPage extends React.Component {
   constructor(props) {
@@ -21,7 +23,7 @@ export class TripPage extends React.Component {
   render() {
     return (
       <div>
-        <Form />
+        <Trip />
       </div>
     );
   }
