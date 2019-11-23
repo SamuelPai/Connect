@@ -6,8 +6,7 @@ import LoginButton from "../../components/LoginButton/LoginButton";
 import tripAPI from "../../utils/tripAPI";
 import Carousel from "../../components/Carousel/Carousel";
 import "bootstrap/dist/css/bootstrap.min.css";
-import NavBar from "../NavBar/Navbar";
-import FooterPage from "../FooterPage/Footer";
+
 import LikeApp from "../LikeApp/Likeapp";
 // import MyTripPage from "../MyTripPagePage/MyTripPagePage.component";
 
@@ -40,20 +39,12 @@ export class LandingPage extends React.Component {
 
   render() {
     return (
-      <div>
-        <NavBar />
-
-        <div className="carousel">
-          <Carousel />
+      <div className="carousel">
+        <Carousel />
+        <div>
+          <LoginButton />
           <div>
-            <LoginButton />
-            <div>
-              <LikeApp />
-
-              <div>
-                <FooterPage />
-              </div>
-            </div>
+            <LikeApp />
           </div>
         </div>
       </div>

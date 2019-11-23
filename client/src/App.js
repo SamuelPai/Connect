@@ -12,9 +12,11 @@ import PrivateRoute from "./components/PrivateRoute/PrivateRoute";
 import { MyTripPagePage } from "./pages/MyTripPagePage/MyTripPagePage.component";
 import MyTrip from "./components/MyTrip/MyTrip";
 import NavBar from "./pages/NavBar/Navbar";
+import FooterPage from "./pages/FooterPage/Footer";
 function App() {
   return (
     <Router>
+      <NavBar />
       <Switch>
         <Route exact path="/" component={LandingPage} />
         <PrivateRoute path="/profile" component={Profile} />
@@ -26,6 +28,7 @@ function App() {
         <Route exact path="/NavBar" component={NavBar} />
         <Route component={NoMatch} />
       </Switch>
+      <FooterPage />
     </Router>
   );
 }

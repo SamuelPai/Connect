@@ -1,7 +1,19 @@
 import React from "react";
 import "./MyTrip.css";
 
-import { Jumbotron, Container, Row, Col, Button } from "reactstrap";
+import {
+  Container,
+  Row,
+  Col,
+  Button,
+  CardTitle,
+  CardText,
+  Card,
+  FormGroup,
+  Label,
+  Input
+} from "reactstrap";
+// import { Card, Button, CardTitle, CardText } from "reactstrap";
 
 const MyTrip = props => {
   return (
@@ -11,23 +23,55 @@ const MyTrip = props => {
           <Button color="primary">
             <Col md={4}>CreateTrip</Col>
           </Button>
-          <Col md={{ span: 6, offset: 6 }}>MY TRIP</Col>
+          <Button outline color="success">
+            <Col md={6}> MY TRIP</Col>
+          </Button>
+        </Row>
+        <Row>
+          <Col sm="4">
+            <Card body>
+              <CardTitle>Special Title Treatment</CardTitle>
+              <CardText>
+                With supporting text below as a natural lead-in to additional
+                content.
+              </CardText>
+              <Button>Go somewhere</Button>
+            </Card>
+          </Col>
+          <Col sm="4">
+            <FormGroup>
+              <Label for="exampleText"> Description venu:</Label>
+              <Input type="textarea" name="text" id="exampleText" />
+            </FormGroup>
+          </Col>
+          <Col sm="4">
+            <FormGroup>
+              <Label for="exampleText"> Who is coming</Label>
+              <Input type="textarea" name="text" id="exampleText" />
+            </FormGroup>
+          </Col>
+          <Col xs="12" sm="12">
+            <Card body className="text-center">
+              <CardTitle>Special Title Treatment</CardTitle>
+              <CardText>
+                With supporting text below as a natural lead-in to additional
+                content.
+              </CardText>
+              <Button>Go somewhere</Button>
+            </Card>
+          </Col>
+          <Col xs="12" sm="12">
+            <Card body className="text-right">
+              <CardTitle>Special Title Treatment</CardTitle>
+              <CardText>
+                With supporting text below as a natural lead-in to additional
+                content.
+              </CardText>
+              <Button>Go somewhere</Button>
+            </Card>
+          </Col>
         </Row>
       </Container>
-
-      <Row>
-        {/* <Col xs="6" sm="4">
-          gdf
-        </Col> */}
-        <Col xs="6" sm="4">
-          Description venu:
-        </Col>
-        <Col sm="4">Who is coming</Col>
-      </Row>
-
-      <Jumbotron>
-        <h1 className="display-3">Fluid jumbotron</h1>
-      </Jumbotron>
     </div>
   );
 };
