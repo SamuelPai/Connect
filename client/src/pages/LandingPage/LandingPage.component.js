@@ -9,6 +9,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import NavBar from "../NavBar/Navbar";
 import FooterPage from "../FooterPage/Footer";
 import LikeApp from "../LikeApp/Likeapp";
+// import MyTripPage from "../MyTripPagePage/MyTripPagePage.component";
 
 export class LandingPage extends React.Component {
   constructor(props) {

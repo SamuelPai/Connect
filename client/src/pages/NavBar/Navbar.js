@@ -44,7 +44,7 @@ const Example = props => {
             </UncontrolledDropdown> */}
         </Nav>
         <div class="logo">
-          <img src="/image/logo.png" alt="logo" width="150" height="40"></img>
+          <img src="/images/logo.png" alt="logo" width="150" height="40"></img>
         </div>
 
         {/* </Collapse> */}
