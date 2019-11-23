@@ -1,7 +1,8 @@
 import React from "react";
+import { Container, Row, Col } from 'reactstrap';
 import Example from "../../components/Example/Example.component";
-import friends from '../../utils/friends.json';
 import tripAPI from '../../utils/tripAPI';
+import ExampleForm from '../../components/ExampleForm/ExampleForm.component'
 
 export class ExamplePage extends React.Component {
   // Setting this.state.friends to the friends json array
@@ -23,8 +24,15 @@ export class ExamplePage extends React.Component {
       .catch(err => console.log(err));
   };
 
+  submitForm(e) {
+    e.preventDefault();
+    console.log('clicked')
+  }
+
   render() {
     return (
+    <Container>
+      <ExampleForm />
       <div>
         {this.state.trips.map(trip => (
           <Example
@@ -37,6 +45,7 @@ export class ExamplePage extends React.Component {
           />
         ))}
       </div>
+    </Container>  
     );
   } 
 }
