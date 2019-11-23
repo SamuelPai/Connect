@@ -12,6 +12,7 @@ import PrivateRoute from "./components/PrivateRoute/PrivateRoute";
 import {MyTripPagePage} from "./pages/MyTripPagePage/MyTripPagePage.component";
 import {CalendarPage} from "./pages/CalendarPage/CalendarPage.component";
 import {SearchPage} from "./pages/SearchPage/SearchPage.component";
+// import NavBar from "../src/pages/NavBar";
 
 function App() {
   
