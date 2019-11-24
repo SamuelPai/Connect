@@ -11,7 +11,9 @@ import {
   Card,
   FormGroup,
   Label,
-  Input
+  Input,
+  Jumbotron,
+  Media
 } from "reactstrap";
 // import { Card, Button, CardTitle, CardText } from "reactstrap";
 
@@ -20,7 +22,7 @@ const MyTrip = props => {
     <div>
       <Container>
         <Row>
-          <Button color="primary">
+          <Button color="primary" href="./Trip">
             <Col md={4}>CreateTrip</Col>
           </Button>
           <Button outline color="success">
@@ -28,7 +30,7 @@ const MyTrip = props => {
           </Button>
         </Row>
         <Row>
-          <Col sm="4">
+          <Col sm="6">
             <Card body>
               <CardTitle>Special Title Treatment</CardTitle>
               <CardText>
@@ -38,20 +40,20 @@ const MyTrip = props => {
               <Button>Go somewhere</Button>
             </Card>
           </Col>
-          <Col sm="4">
+          <Col sm="3">
             <FormGroup>
               <Label for="exampleText"> Description venu:</Label>
               <Input type="textarea" name="text" id="exampleText" />
             </FormGroup>
           </Col>
-          <Col sm="4">
+          <Col sm="3">
             <FormGroup>
               <Label for="exampleText"> Who is coming</Label>
               <Input type="textarea" name="text" id="exampleText" />
             </FormGroup>
           </Col>
-          <Col xs="12" sm="12">
-            <Card body className="text-center">
+          <Col sm="6">
+            <Card body>
               <CardTitle>Special Title Treatment</CardTitle>
               <CardText>
                 With supporting text below as a natural lead-in to additional
@@ -60,8 +62,24 @@ const MyTrip = props => {
               <Button>Go somewhere</Button>
             </Card>
           </Col>
-          <Col xs="12" sm="12">
-            <Card body className="text-right">
+          <Col sm="6">
+            <Card AddDestination>
+              <Container fluid>
+                <Label for="exampleText"> Add Destination</Label>
+                <Col sm="7">
+                  <Input type="textarea" name="text" id="exampleText" />
+                </Col>
+                <Col sm="7">
+                  <Input type="textarea" name="text" id="exampleText" />
+                </Col>
+                <Col sm="7">
+                  <Input type="textarea" name="text" id="exampleText" />
+                </Col>
+              </Container>
+            </Card>
+          </Col>
+          <Col sm="6">
+            <Card body>
               <CardTitle>Special Title Treatment</CardTitle>
               <CardText>
                 With supporting text below as a natural lead-in to additional
@@ -69,6 +87,11 @@ const MyTrip = props => {
               </CardText>
               <Button>Go somewhere</Button>
             </Card>
+          </Col>
+          <Col sm="2">
+            <Button color="primary" href="./CreateActivity" size="lg">
+              <Col md={4}>CreateActivity</Col>
+            </Button>
           </Col>
         </Row>
       </Container>
