@@ -68,13 +68,32 @@ const MyTrip = props => {
                 <Label for="exampleText"> Add Destination</Label>
                 <Col sm="7">
                   <Input type="textarea" name="text" id="exampleText" />
+                  <Col sm="6">
+                    <Input type="checkbox" />
+                    Check to List
+                  </Col>
                 </Col>
+                {/* <Col sm="2">
+                  <FormGroup check>
+                    <Label check>
+                      <Input type="checkbox" /> Check to List
+                    </Label>
+                  </FormGroup>
+                </Col> */}
                 <Col sm="7">
                   <Input type="textarea" name="text" id="exampleText" />
+                  <Col sm="6">
+                    <Input type="checkbox" />
+                    Check to List
+                  </Col>
                 </Col>
-                <Col sm="7">
+                {/* <Col sm="7">
                   <Input type="textarea" name="text" id="exampleText" />
-                </Col>
+                  <Col sm="6">
+                    <Input type="checkbox" />
+                    Check to List
+                  </Col>
+                </Col> */}
               </Container>
             </Card>
           </Col>
@@ -88,6 +107,7 @@ const MyTrip = props => {
               <Button>Go somewhere</Button>
             </Card>
           </Col>
+
           <Col sm="2">
             <Button color="primary" href="./CreateActivity" size="lg">
               <Col md={4}>CreateActivity</Col>
