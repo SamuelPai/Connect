@@ -12,6 +12,8 @@ import PrivateRoute from "./components/PrivateRoute/PrivateRoute";
 import { MyTripPagePage } from "./pages/MyTripPagePage/MyTripPagePage.component";
 import MyTrip from "./components/MyTrip/MyTrip";
 import {TripPage} from "./pages/TripPage/TripPage.component";
+import {SearchPage} from "./pages/SearchPage/SearchPage.component";
+
 import NavBar from "./pages/NavBar/Navbar";
 import FooterPage from "./pages/FooterPage/Footer";
 
@@ -27,7 +29,8 @@ function App() {
         <Route exact path="/example" component={ExamplePage} />
         <Route exact path="/landing" component={LandingPage} />
         <Route exact path="/MyTrip" component={MyTrip} />
-        <Route exact path="/Trip" component={TripPage} /> }
+        <Route exact path="/Trip" component={TripPage} /> 
+        <Route exact path="/Search" component={SearchPage} />
         <Route exact path="/NavBar" component={NavBar} />
         <Route component={NoMatch} />
       </Switch>

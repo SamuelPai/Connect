@@ -30,7 +30,7 @@ const Example = props => {
             <NavLink href="/calenderpage">CALANDER</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink href="/Search">Search</NavLink>
+            <NavLink href="/Search">SEARCH</NavLink>
           </NavItem>
           {/* <UncontrolledDropdown nav inNavbar>
               <DropdownToggle nav caret>
