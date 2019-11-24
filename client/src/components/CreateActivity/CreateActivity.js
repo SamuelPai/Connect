@@ -7,14 +7,16 @@ import {
   Row,
   Jumbotron,
   Col,
-  Button
+  Badge
 } from "reactstrap";
 
 const CreateActivity = props => {
   return (
     <Row>
       <Col sm="12" md={{ size: 6, offset: 3 }}>
-        CREATE ACTIVITY
+        <h1>
+          <Badge color="Yellow">CREATE ACTIVITY</Badge>
+        </h1>
         <Jumbotron>
           <Form>
             <FormGroup>
