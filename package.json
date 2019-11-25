@@ -19,11 +19,14 @@
     "cors": "^2.8.5",
     "debug": "~2.6.9",
     "express": "~4.16.1",
+    "gh-pages": "^2.1.1",
     "http-errors": "~1.6.3",
     "jade": "~1.11.0",
     "morgan": "~1.9.1",
     "mysql2": "^2.0.0",
     "react": "^16.12.0",
+    "react-big-calendar": "^0.23.0",
+    "react-calendar": "^2.19.2",
     "react-dom": "^16.12.0",
     "reactstrap": "^8.1.1",
     "sequelize": "^5.21.2",
@@ -31,6 +34,7 @@
   },
   "devDependencies": {
     "chai": "^4.2.0",
+    "css-loader": "^3.2.0",
     "mocha": "^6.2.2",
     "plop": "^2.5.3"
   }

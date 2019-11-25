@@ -14,20 +14,6 @@ const getAll = (req, res) => {
 
 };
 
-// res.json([
-//   {
-//     id: 1,
-//     name: 'Test 1'
-//   },
-//   {
-//     id: 2,
-//     name: 'Test 2'
-//   },
-//   {
-//     id: 3,
-//     name: 'Test 3'
-//   },
-// ]);
 
 const create = (req, res) => {
   // TODO - Implement Trips.create
@@ -42,36 +28,50 @@ const create = (req, res) => {
     });
   };
 
+  const getById = (req, res) => {
+    const { id } = req.params;
+    db.Trips.findOne({
+      where: {
+        id: id
+      }
+    })
+    .then(function(dbUser) {
+      res.json({
+        dbUser
+      })
+    });
+  };
+  
+  const updateById = (req, res) => {
+    const { id } = req.params;
+    db.Trips.update(req.body, {
+      where: {
+        id: id
+      }
+    })
+    .then(function(dbUser){
+      res.json(dbUser)
+    })
+  };
+  
+  const deleteById = (req, res) => {
+    const { id } = req.params;
+    db.Trips.destroy({
+      where: {
+        id: id
+      }
+    })
+    .then(function(dbUser){
+      res.json(dbUser);
+      res.status(500).end();
+    })
+  };
 
-// const getById = (req, res) => {
-//   // TODO - Implement Trips.getById
-//   const { id } = req.params;
-//   console.log('TripsController.getById.id', id);
-//   res.json({
-//     id
-//   });
-// };
-
-// const updateById = (req, res) => {
-//   // TODO - Implement Trips.updateById
-//   const { id } = req.params;
-//   console.log('TripsController.getById.id', id);
-//   res.json({
-//     id
-//   });
-// };
-
-// const deleteById = (req, res) => {
-//   // TODO - Implement Trips.deleteById
-//   const { id } = req.params;
-//   console.log('TripsController.getById.id', id);
-//   res.status(500).end();
-// };
 
 module.exports = {
   getAll,
-  create
-  // getById,
-  // updateById,
-  // deleteById
+  create,
+  getById,
+  updateById,
+  deleteById
 };
