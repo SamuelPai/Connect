@@ -26,7 +26,7 @@ function App() {
         <PrivateRoute path="/profile" component={Profile} />
         <Route exact path="/about" component={About} />
         <Route exact path="/cheese/:id" component={CheeseDetail} />
-        <Route exact path="/example" component={ExamplePage} />
+        {/* <Route exact path="/example" component={ExamplePage} /> */}
         <Route exact path="/landing" component={LandingPage} />
         <Route exact path="/MyTrip" component={MyTrip} />
         <Route exact path="/Trip" component={TripPage} /> 

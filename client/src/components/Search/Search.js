@@ -1,6 +1,6 @@
 import React from 'react';
 import { Media } from 'reactstrap';
-// import "./s"
+import "./Search.css"
 import { InputGroup, InputGroupText, InputGroupAddon, Input } from 'reactstrap';
 
 const Search = () => {
@@ -9,7 +9,7 @@ const Search = () => {
 <br />
 <InputGroup>
         <Input />
-        <InputGroupAddon className="searchBar"addonType="append">
+        <InputGroupAddon style={{width: 25,padding:0, }}className="searchBar"addonType="append">
           <InputGroupText>Search</InputGroupText>
         </InputGroupAddon>
       </InputGroup>
