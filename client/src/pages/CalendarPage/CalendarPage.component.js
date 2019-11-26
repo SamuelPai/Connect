@@ -1,31 +1,54 @@
 import React from 'react';
 import { CalendarPageProps } from './CalendarPage.propTypes'
-import { ReactRouterDetails } from '../../components/ReactRouterDetails/ReactRouterDetails.component';
-import styles from './CalendarPage.styles.scss';
-import NavBar from "../NavBar/Navbar";
+import {
+  Calendar,
+  momentLocalizer,
+} from 'react-big-calendar';
+import moment from "moment";
+import "react-big-calendar/lib/css/react-big-calendar.css";
+
+// import './calendarstyle.css'
+
+const localizer = momentLocalizer(moment)
 
 export class CalendarPage extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      events: [
+        {
+          start: new Date(),
+          end: new Date(moment().add(1, "days")),
+          title: "Some title"
+        }
+      ]
+    };
   }
+
 
   componentDidMount() {
     console.log('componentDidMount()', this.props);
+   
+
   }
 
   componentDidUpdate(prevProps, prevState, prevSnapshot) {
     console.log('componentDidUpdate(prevProps, prevState, prevSnapshot)', prevProps, prevState, prevSnapshot);
   }
 
+
   render() {
     return (
-      <div>
-        <NavBar></NavBar>
-        <h1>Calendar Page (Route: {this.props.match.url})</h1>
-       
+         <div className="App">
+        <Calendar
+          localizer={localizer}
+          defaultDate={new Date()}
+          defaultView="month"
+          events={this.state.events}
+          style={{ height: "100vh" }}
+        />
       </div>
-    );
+          );
   }
 }
 

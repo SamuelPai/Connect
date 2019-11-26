@@ -1,0 +1,13 @@
+.react-calendar {
+    min-width: 80vw;
+    margin-left: 175px;
+    padding: 30px;
+    margin-top: 20px;
+    
+}
+#root {
+    /* justify-content: center; */
+}
+.react-calendar__month-view__days {
+    height: 80vh;
+}

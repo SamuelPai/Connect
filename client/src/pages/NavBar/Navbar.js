@@ -20,7 +20,7 @@ const Example = props => {
         <Collapse isOpen={isOpen} navbar> */}
         <Nav className="mr-auto" navbar>
           <NavItem>
-            <NavLink href="C:\Users\divya\Desktop\ucsd\connect\client\src\pages\LandingPage\LandingPage.component.js">
+            <NavLink href="/">
               HOME
             </NavLink>
           </NavItem>
@@ -28,7 +28,7 @@ const Example = props => {
             <NavLink href="/MyTrip">TRIP</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink href="/calenderpage">CALANDER</NavLink>
+            <NavLink href="/calenderpage">CALENDAR</NavLink>
           </NavItem>
           <NavItem>
             <NavLink href="/Search">SEARCH</NavLink>
