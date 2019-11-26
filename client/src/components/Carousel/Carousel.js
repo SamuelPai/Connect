@@ -58,7 +58,7 @@ const Example = (props) => {
         key={item.src}
       >
         <img className="image" src={item.src} alt={item.altText} />
-        <CarouselCaption captionText={item.caption} captionHeader={item.caption} />
+        <CarouselCaption captionText={item.caption} captionHeader={item.header} />
       </CarouselItem>
     );
   });
