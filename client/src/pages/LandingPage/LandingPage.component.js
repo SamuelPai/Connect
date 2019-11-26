@@ -8,7 +8,7 @@ import Carousel from "../../components/Carousel/Carousel";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import LikeApp from "../LikeApp/Likeapp";
-// import MyTripPage from "../MyTripPagePage/MyTripPagePage.component";
+// import MyTripPage from "../MyTripPage/MyTripPage.component";
 
 export class LandingPage extends React.Component {
   constructor(props) {

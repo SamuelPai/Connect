@@ -6,7 +6,24 @@ const Sequelize = require('sequelize');
 const basename = path.basename(__filename);
 const env = process.env.NODE_ENV || 'development';
 const config = require(__dirname + '/../config/config.json')[env];
+var mysql = require("mysql");
+export var connection;
 const db = {};
+
+if (process.env.JAWSDB_URL) {
+  connection = mysql.createConnection(process.env.JAWSDB_URL);
+} else {
+  connection = mysql.createConnection({
+    host: 'localhost',
+    user: 'root',
+    password: 'SamPai159$',
+    databse: 'reunion2'
+  });
+};
+
+
+
+
 
 let sequelize;
 if (config.use_env_variable) {
