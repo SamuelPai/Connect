@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./Navbar.css";
-import {MyTripPagePage} from "../MyTripPagePage/MyTripPagePage.component.js";
 
 import { Navbar, NavbarBrand, Nav, NavItem, NavLink } from "reactstrap";
 
@@ -21,7 +20,9 @@ const Example = props => {
         <Collapse isOpen={isOpen} navbar> */}
         <Nav className="mr-auto" navbar>
           <NavItem>
-            <NavLink href="/Home">HOME</NavLink>
+            <NavLink href="C:\Users\divya\Desktop\ucsd\connect\client\src\pages\LandingPage\LandingPage.component.js">
+              HOME
+            </NavLink>
           </NavItem>
           <NavItem>
             <NavLink href="/MyTrip">TRIP</NavLink>
