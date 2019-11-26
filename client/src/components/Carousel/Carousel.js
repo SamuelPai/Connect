@@ -12,8 +12,8 @@ const items = [
   {
     src:  '/images/explore.jpg',
     altText: 'Slide 1',
-    caption: 'Plan an Event',
-    header: 'Create a Trip '
+    caption: 'Plan an Event-There is a whole world to explore. Pack your backpack, your best friend and go',
+    header: 'Create a Trip with us and ease your journey'
   },
   {
     src: '/images/join.jpg',
