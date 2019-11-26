@@ -11,8 +11,8 @@ router.use(function timeLog (req, res, next) {
 // ROUTES
 router.get('/', controller.getAll);
 router.post('/', controller.create);
-// router.get('/Trips/:id', controller.getById);
-// router.put('/Trips/:id', controller.updateById);
-// router.delete('/Trips/:id', controller.updateById);
+router.get('/:id', controller.getById);
+router.put('/:id', controller.updateById);
+router.delete('/:id', controller.updateById);
 
 module.exports = router;

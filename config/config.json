@@ -1,11 +1,7 @@
 {
   "development": {
     "username": "root",
-<<<<<<< HEAD
-    "password": "Harkirat02",
-=======
     "password": "SamPai159$",
->>>>>>> 87016c1ad26b9f08350b2f5fb25bd1c3e3973c22
     "database": "reunion2",
     "host": "127.0.0.1",
     "port": 3306,

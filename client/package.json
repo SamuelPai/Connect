@@ -2,10 +2,12 @@
   "name": "project-3-react",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://samuelpai.github.io/connect",
   "dependencies": {
     "@auth0/auth0-spa-js": "^1.5.0",
     "axios": "^0.19.0",
     "bootstrap": "^4.3.1",
+    "gh-pages": "^2.1.1",
     "node-sass": "^4.13.0",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
@@ -22,7 +24,9 @@
     "eject": "./node_modules/.bin/react-scripts eject",
     "plop": "plop",
     "storybook": "start-storybook -p 9009 -s public",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "build-storybook -s public",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
