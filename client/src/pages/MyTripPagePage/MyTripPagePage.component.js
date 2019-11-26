@@ -4,6 +4,7 @@ import { ReactRouterDetails } from "../../components/ReactRouterDetails/ReactRou
 import styles from "./MyTripPagePage.styles.scss";
 import Jumbotron from "../../components/MyTrip/MyTrip";
 import { Container, Row, Col, Button } from "reactstrap";
+import MyTrip from "../../components/MyTrip/MyTrip";
 
 export class MyTripPagePage extends React.Component {
   constructor(props) {
@@ -27,10 +28,7 @@ export class MyTripPagePage extends React.Component {
   render() {
     return (
       <div>
-        <Jumbotron />
-        <Row />
-        <Container />
-        <Col />
+        <MyTrip />
       </div>
     );
   }
