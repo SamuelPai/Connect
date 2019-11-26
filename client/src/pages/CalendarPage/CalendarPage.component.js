@@ -1,8 +1,7 @@
-import React from 'react';
-import { CalendarPageProps } from './CalendarPage.propTypes'
-import { ReactRouterDetails } from '../../components/ReactRouterDetails/ReactRouterDetails.component';
-import styles from './CalendarPage.styles.scss';
-import NavBar from "../NavBar/Navbar";
+import React from "react";
+import { CalendarPageProps } from "./CalendarPage.propTypes";
+import { ReactRouterDetails } from "../../components/ReactRouterDetails/ReactRouterDetails.component";
+import styles from "./CalendarPage.styles.scss";
 
 export class CalendarPage extends React.Component {
   constructor(props) {
@@ -11,19 +10,22 @@ export class CalendarPage extends React.Component {
   }
 
   componentDidMount() {
-    console.log('componentDidMount()', this.props);
+    console.log("componentDidMount()", this.props);
   }
 
   componentDidUpdate(prevProps, prevState, prevSnapshot) {
-    console.log('componentDidUpdate(prevProps, prevState, prevSnapshot)', prevProps, prevState, prevSnapshot);
+    console.log(
+      "componentDidUpdate(prevProps, prevState, prevSnapshot)",
+      prevProps,
+      prevState,
+      prevSnapshot
+    );
   }
 
   render() {
     return (
       <div>
-        <NavBar></NavBar>
         <h1>Calendar Page (Route: {this.props.match.url})</h1>
-       
       </div>
     );
   }

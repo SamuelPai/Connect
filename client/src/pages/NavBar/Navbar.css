@@ -1,6 +1,7 @@
 .navbar {
-  background: rgb(6, 236, 94);
-  color: white;
+  background: rgb(168, 255, 194);
+  color: black;
+  font-family: "Calistoga", cursive;
 }
 
 .logo {

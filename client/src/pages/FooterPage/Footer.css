@@ -6,8 +6,9 @@
  
 } */
 .footer-area {
-  background: rgb(6, 236, 94);
+  background: rgb(132, 255, 169);
   color: white;
   /* padding: 30px 0; */
   padding-bottom: 5px;
+  font-family: "Calistoga", cursive;
 }
