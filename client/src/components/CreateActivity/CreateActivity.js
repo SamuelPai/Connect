@@ -7,7 +7,8 @@ import {
   Row,
   Jumbotron,
   Col,
-  Badge
+  Badge,
+  Button
 } from "reactstrap";
 
 const CreateActivity = props => {
@@ -51,6 +52,9 @@ const CreateActivity = props => {
             </FormGroup>
           </Form>
         </Jumbotron>
+        <Button color="primary" size="lg" active>
+          Submit
+        </Button>{" "}
       </Col>
     </Row>
   );
