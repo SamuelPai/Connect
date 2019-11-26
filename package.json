@@ -12,8 +12,7 @@
     "test": "npm run test:controllers && npm run test:routes",
     "test:controllers": "./node_modules/.bin/mocha \"./controllers/**/*.spec.js\"",
     "test:routes": "./node_modules/.bin/mocha \"./routes/**/*.spec.js\"",
-    "plop": "./node_modules/.bin/plop",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+    "plop": "./node_modules/.bin/plop"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
