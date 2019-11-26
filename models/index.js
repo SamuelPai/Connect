@@ -7,7 +7,7 @@ const basename = path.basename(__filename);
 const env = process.env.NODE_ENV || 'development';
 const config = require(__dirname + '/../config/config.json')[env];
 var mysql = require("mysql");
-export var connection;
+var connection;
 const db = {};
 
 if (process.env.JAWSDB_URL) {
@@ -21,6 +21,13 @@ if (process.env.JAWSDB_URL) {
   });
 };
 
+connection.connect(function(err) {
+  if (err) {
+      console.error("error connecting: " + err.stack);
+      return;
+  }
+  console.log("connected as id " + connection.threadId);
+});
 
 
 
@@ -51,4 +58,4 @@ Object.keys(db).forEach(modelName => {
 db.sequelize = sequelize;
 db.Sequelize = Sequelize;
 
-module.exports = db;
+module.exports = db, connection;
