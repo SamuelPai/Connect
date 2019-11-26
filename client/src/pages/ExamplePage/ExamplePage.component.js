@@ -2,7 +2,6 @@ import React from "react";
 import { Container, Row, Col } from 'reactstrap';
 import Example from "../../components/Example/Example.component";
 import tripAPI from '../../utils/tripAPI';
-import ExampleForm from '../../components/ExampleForm/ExampleForm.component'
 
 export class ExamplePage extends React.Component {
   // Setting this.state.friends to the friends json array
@@ -32,16 +31,15 @@ export class ExamplePage extends React.Component {
   render() {
     return (
     <Container>
-      <ExampleForm />
       <div>
         {this.state.trips.map(trip => (
           <Example
             id={trip.id}
             key={trip.id}
-            title={trip.title}
+            tripName={trip.tripName}
             image={trip.image}
-            Description={trip.Description}
-            location={trip.location}
+            destination={trip.destination}
+            description={trip.description}
           />
         ))}
       </div>

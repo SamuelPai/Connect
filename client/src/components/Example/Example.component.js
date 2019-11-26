@@ -6,7 +6,7 @@ import {
     CardTitle, CardSubtitle, Button
   } from 'reactstrap';
 
-  
+
   function Example(props) {
     return (
         <div className="card">
@@ -16,13 +16,13 @@ import {
         <div className="content">
           <ul>
             <li>
-              <strong>Name:</strong> {props.title}
+              <strong>Name:</strong> {props.tripName}
             </li>
             <li>
-              <strong>Description:</strong> {props.Description}
+              <strong>Description:</strong> {props.description}
             </li>
             <li>
-              <strong>Location:</strong> {props.location}
+              <strong>Location:</strong> {props.destination}
             </li>
           </ul>
         </div>
