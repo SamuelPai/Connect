@@ -2,6 +2,10 @@
   "name": "project-3-react",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "npm": "6.9.0",
+    "node": "v12.6.0"
+  },
   "dependencies": {
     "@auth0/auth0-spa-js": "^1.5.0",
     "axios": "^0.19.0",
