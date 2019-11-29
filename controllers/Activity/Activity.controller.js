@@ -40,6 +40,20 @@ const getById = (req, res) => {
   });
 };
 
+const getByTripId = (req, res) => {
+  const { tripId } = req.params;
+db.Activity.findAll({
+  where: {
+    tripId: tripId
+  }
+})
+.then(function(TripActvities) {
+  res.json({
+    TripActvities
+  })
+});
+}
+
 const updateById = (req, res) => {
   const { id } = req.params;
   db.Activity.update(req.body, {
@@ -69,5 +83,6 @@ module.exports = {
   create,
   getById,
   updateById,
-  deleteById
+  deleteById,
+  getByTripId
 };

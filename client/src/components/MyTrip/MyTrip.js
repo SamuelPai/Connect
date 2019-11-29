@@ -32,7 +32,7 @@ const MyTrip = props => {
         <Row>
           <Col sm="6">
             <Card body>
-              <CardTitle>Title {props.tripName}</CardTitle>
+              <CardTitle>Title: {props.tripName}</CardTitle>
               <CardText>
                 {props.description}
               </CardText>
