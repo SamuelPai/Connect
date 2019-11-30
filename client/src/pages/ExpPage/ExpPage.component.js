@@ -1,18 +1,25 @@
 import React from 'react';
 import { ExpPageProps } from './ExpPage.propTypes'
+// API's
 import tripAPI from '../../utils/tripAPI';
-import styles from './ExpPage.styles.scss';
+import activityAPI from '../../utils/activityAPI';
+// Components
 import TripSelector from '../../components/ExPgComp/TripSelector/TripSelector.component';
 import TripViewer from '../../components/ExPgComp/TripViewer/TripViewer.component';
+import ActivityViewer from '../../components/ExPgComp/ActivityViewer/ActivityViewer.component';
+// Styles
 import { Container, Row, Col } from 'reactstrap';
+import styles from './ExpPage.styles.scss';
 
 export default class ExpPage extends React.Component {
   state = {
-    trips: []
+    trips: [],
+    activities: []
   }
 
   componentDidMount() {
     this.getTrips();
+    this.getActivity();
   }
 
   componentDidUpdate(prevProps, prevState, prevSnapshot) {
@@ -29,8 +36,19 @@ export default class ExpPage extends React.Component {
       .catch(err => console.log(err));
   };
 
+  getActivity = () => {
+    activityAPI.getActivity()
+    .then(res => {
+      var activityArray = res.data.activity
+      console.log(activityArray)
+      this.setState({activities: activityArray})
+    })
+    .catch(err => console.log(err))
+  }
+
   render() {
     return (
+    <Container>
     <Row>
       <Col>
         <h2>Trip Selector</h2>
@@ -52,7 +70,20 @@ export default class ExpPage extends React.Component {
         />
       ))}
       </Col>
+      <Col>
+      <h3>Activity Viewer</h3>
+      {this.state.activities.map(activity => (
+        <ActivityViewer 
+        title={activity.title}
+        link={activity.link}
+        notes={activity.notes}
+        votesYes={activity.votesYes}
+        votesNo={activity.votesNo}
+      />
+      ))}
+      </Col>
     </Row>
+    </Container>
     );
   }
 }
