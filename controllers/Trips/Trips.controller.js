@@ -35,9 +35,9 @@ const create = (req, res) => {
         id: id
       }
     })
-    .then(function(dbUser) {
+    .then(function(trip) {
       res.json({
-        dbUser
+        trip
       })
     });
   };

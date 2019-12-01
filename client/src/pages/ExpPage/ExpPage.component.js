@@ -81,6 +81,7 @@ export default class ExpPage extends React.Component {
       <Col sm="6">
       <h3>Trip Viewer</h3>
         <TripViewer
+        id={this.state.tripById.id}
         title={this.state.tripById.title}
         tripDate={this.state.tripById.tripDate}
         location={this.state.tripById.location}
