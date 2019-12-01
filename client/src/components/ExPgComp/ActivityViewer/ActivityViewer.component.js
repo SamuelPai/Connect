@@ -7,13 +7,13 @@ const ActivityViewer = props => {
     return (
         <Row>
           <Card body>
-            <CardTitle>{props.title}</CardTitle>
-            <CardText>{props.link}</CardText>
-            <CardText>{props.notes}</CardText>
-            <CardText>Votes- Yes:{props.votesYes} | No:{props.votesNo}</CardText>
+            <CardTitle>title: {props.title}</CardTitle>
+            <CardText>link: {props.link}</CardText>
+            <CardText>notes: {props.notes}</CardText>
+            <CardText className="text-center">Vote </CardText>
             <ButtonGroup>
-            <Button>Vote Yes!</Button>
-            <Button>Vote No!</Button>
+            <Button>Yes! {props.votesYes}</Button>
+            <Button>No! {props.votesNo}</Button>
             </ButtonGroup>
           </Card>       
       </Row>

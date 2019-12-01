@@ -7,8 +7,8 @@ import { ListGroup, ListGroupItem } from 'reactstrap';
 const TripSelector = props => {
     return (
     <div>
-      <ListGroup>
-        <ListGroupItem tag="button" action>{props.title}</ListGroupItem>
+   <ListGroup>
+        <ListGroupItem tag="a" href={'/exp/' + props.id} action>{props.title}</ListGroupItem>
       </ListGroup>
     </div>
     );

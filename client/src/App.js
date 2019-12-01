@@ -22,7 +22,7 @@ function App() {
     <Router>
       <NavBar />
       <Switch>
-        <Route exact path="/" component={LandingPage} /> */}
+        <Route exact path="/" component={LandingPage} />
         <PrivateRoute path="/profile" component={Profile} />
         <Route exact path="/about" component={About} />
         <Route exact path="/cheese/:id" component={CheeseDetail} />
@@ -34,6 +34,7 @@ function App() {
         <Route exact path="/NavBar" component={NavBar} />
         <Route exact path="/CreateActivity" component={CreateActivity} />
         <Route exact path="/exp" component={ExpPage} />
+        <Route exact path="/exp/:id" component={ExpPage} />
         <Route component={NoMatch} />
       </Switch>
       <FooterPage />
