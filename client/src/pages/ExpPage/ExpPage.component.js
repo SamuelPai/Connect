@@ -80,27 +80,25 @@ export default class ExpPage extends React.Component {
       </Col>
       <Col sm="6">
       <h3>Trip Viewer</h3>
-      {this.state.tripById.map(trip => (
         <TripViewer
-        title={trip.title}
-        tripDate={trip.tripDate}
-        location={trip.location}
-        Description={trip.Description}
-        image={trip.image}
+        title={this.state.tripById.title}
+        tripDate={this.state.tripById.tripDate}
+        location={this.state.tripById.location}
+        Description={this.state.tripById.Description}
+        image={this.state.tripById.image}
         />
-        ))}
       </Col>
       <Col sm="3">
       <h3>Activity Viewer</h3>
-      {/* {this.state.activities.map(activity => ( */}
+      {this.state.activities.map(activity => (
         <ActivityViewer 
-        // title={activity.title}
-        // link={activity.link}
-        // notes={activity.notes}
-        // votesYes={activity.votesYes}
-        // votesNo={activity.votesNo}
+        title={activity.title}
+        link={activity.link}
+        notes={activity.notes}
+        votesYes={activity.votesYes}
+        votesNo={activity.votesNo}
       />
-      {/* ))} */}
+       ))}
       </Col>
     </Row>
     </Container>
