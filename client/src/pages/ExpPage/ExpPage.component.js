@@ -22,8 +22,9 @@ export default class ExpPage extends React.Component {
 
   componentDidMount() {
     this.getTrips();
-    this.getActivity();
     this.getTripsById();
+    // this.getActivity();
+    this.getActivityById();
 }
 
   componentDidUpdate(prevProps, prevState, prevSnapshot) {
@@ -53,14 +54,26 @@ export default class ExpPage extends React.Component {
   }
   }
 
-  getActivity = () => {
-    activityAPI.getActivity()
-    .then(res => {
-      var activityArray = res.data.activity
-      console.log(activityArray)
-      this.setState({activities: activityArray})
-    })
-    .catch(err => console.log(err))
+  // getActivity = () => {
+  //   activityAPI.getActivity()
+  //   .then(res => {
+  //     var activityArray = res.data.activity
+  //     console.log(activityArray)
+  //     this.setState({activities: activityArray})
+  //   })
+  //   .catch(err => console.log(err))
+  // }
+  getActivityById = () => {
+    const { id } = this.props.match.params;
+    if (id) {
+      activityAPI.getById(id)
+      .then(res => {
+        var activitiesArray = res.data.activity
+        console.log("Activities", activitiesArray);
+        this.setState({ activities: activitiesArray})
+      })
+      .catch(err => console.log(err));
+  }
   }
 
   
@@ -70,7 +83,7 @@ export default class ExpPage extends React.Component {
     <Container>
     <Row>
       <Col sm="3" >
-        <h2>Trip Selector</h2>
+        <h5>Trip Selector</h5>
         {this.state.trips.map(trip => (
           <TripSelector 
           title={trip.title}
@@ -79,7 +92,7 @@ export default class ExpPage extends React.Component {
         ))}
       </Col>
       <Col sm="6">
-      <h3>Trip Viewer</h3>
+      <h5>Trip Viewer</h5>
         <TripViewer
         id={this.state.tripById.id}
         title={this.state.tripById.title}
@@ -90,7 +103,7 @@ export default class ExpPage extends React.Component {
         />
       </Col>
       <Col sm="3">
-      <h3>Activity Viewer</h3>
+      <h5>Activity Viewer</h5>
       {this.state.activities.map(activity => (
         <ActivityViewer 
         title={activity.title}

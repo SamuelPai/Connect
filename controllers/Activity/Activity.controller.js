@@ -28,31 +28,31 @@ const create = (req, res) => {
 
 const getById = (req, res) => {
   const { id } = req.params;
-  db.Activity.findOne({
+  db.Activity.findAll({
     where: {
-      id: id
+      tripId: id
     }
   })
-  .then(function(dbActivity) {
+  .then(function(activity) {
     res.json({
-      dbActivity
+      activity
     })
   });
 };
 
-const getByTripId = (req, res) => {
-  const { tripId } = req.params;
-db.Activity.findAll({
-  where: {
-    tripId: tripId
-  }
-})
-.then(function(TripActvities) {
-  res.json({
-    TripActvities
-  })
-});
-}
+// const getActivityById = (req, res) => {
+//   const { id } = req.params;
+// db.Activity.findAll({
+//   where: {
+//     tripId: id
+//   }
+// })
+// .then(function(TripActvities) {
+//   res.json({
+//     TripActvities
+//   })
+// });
+// }
 
 const updateById = (req, res) => {
   const { id } = req.params;
@@ -84,5 +84,5 @@ module.exports = {
   getById,
   updateById,
   deleteById,
-  getByTripId
+  // getActivityById
 };

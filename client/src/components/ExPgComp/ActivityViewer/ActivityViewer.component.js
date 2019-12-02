@@ -8,7 +8,7 @@ const ActivityViewer = props => {
         <Row>
           <Card body>
             <CardTitle>title: {props.title}</CardTitle>
-            <CardText>link: {props.link}</CardText>
+            <CardText>link: <a href={props.link}>{props.link}</a></CardText>
             <CardText>notes: {props.notes}</CardText>
             <CardText className="text-center">Vote </CardText>
             <ButtonGroup>
