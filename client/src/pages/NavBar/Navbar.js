@@ -60,14 +60,7 @@ const Example = props => {
                 <i class="fa fa-fw fa-facebook"></i>
               </a>
             </li>
-            {/* <li class="list-inline-item">
-              <a
-                class="btn btn-outline-dark btn-social text-center rounded-circle"
-                href="https://www.linkedin.com"
-              >
-                <i class="fa fa-fw fa-linkedin"></i>
-              </a>
-            </li> */}
+        
             <li class="nav-item">
               <a
                 class="btn btn-outline-dark btn-social text-right rounded-circle"
@@ -84,18 +77,12 @@ const Example = props => {
                 <i class="fa fa-fw fa-pinterest"></i>
               </a>
             </li>
-            {/* <li class="list-inline-item">
-              <a
-                class="btn btn-outline-dark btn-social text-center rounded-circle"
-                href="https://github.com"
-              >
-                <i class="fa fa-fw fa-github"></i>
-              </a>
-            </li> */}
           </ul>
         </div>
       </Navbar>
     </div>
+  
+  
   );
 };
 

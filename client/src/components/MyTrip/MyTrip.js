@@ -1,5 +1,7 @@
 import React from "react";
 import "./MyTrip.css";
+import Example from "../../components/Example/Example.component";
+
 
 import {
   Container,
@@ -42,7 +44,7 @@ const MyTrip = props => {
           </Col>
           <Col sm="3">
             <FormGroup>
-              <Label for="exampleText"> Description venu:</Label>
+              <Label for="exampleText"> Description venu: {props.description} </Label>
               <Input type="textarea" name="text" id="exampleText" />
             </FormGroup>
           </Col>

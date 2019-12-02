@@ -1,8 +1,15 @@
-.display-3 jumbotron {
-  background: rgb(28, 250, 58);
+.display-3 {
+  background: rgb(183, 231, 190);
+  text-align: left;
+  font-family: 'Kalam', cursive;
+  color: rgb(1, 54, 1);
+  margin: 20px;
 }
-/* @media (min-width: 576px) */
-/* .jumbotron {
-  padding: 4rem 2rem;
-  background: yellow;
-} */
+.AboutApp{
+  font-size: 24px;
+  color: rgb(1, 54, 1);
+}
+.lead{
+  font-size: 20px;
+  color: rgb(1, 54, 1);
+}
