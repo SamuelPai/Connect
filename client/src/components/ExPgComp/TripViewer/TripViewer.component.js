@@ -14,13 +14,13 @@ const TripViewer = props => {
             {props.title}
             </Media>
             <Media body>
-            Location: {props.location}
+            {props.location}
             </Media>
             <Media body>
-            Date: {props.tripDate}
+            {props.tripDate}
             </Media>
             <Media body>
-            Notes: {props.Description}
+            {props.Description}
             </Media>
         </Media>
       </Media>
