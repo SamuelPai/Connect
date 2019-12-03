@@ -1,10 +1,20 @@
-
 .footer-area {
-  background: rgb(183, 231, 190);
+  background: rgb(121, 86, 115);
   color: rgb(15, 15, 15);
   /* padding: 30px 0; */
   padding-bottom: -10%;
-  padding-top: 2px;
+  /* margin-top: 210; */
+  padding-top: 10px;
   font-family: "Calistoga", cursive;
   text-align: center;
+  font: bold;
+  font-family: "Satisfy", cursive;
+
+  font-family: "Great Vibes", cursive;
+
+  font-family: "Bad Script", cursive;
+
+  font-family: "Oleo Script", cursive;
+
+  font-family: "Carter One", cursive;
 }

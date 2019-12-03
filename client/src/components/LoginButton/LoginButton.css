@@ -1,4 +1,7 @@
 button {
-    background: #012241;
-    color: aliceblue;
-  }
+  background: rgb(84, 99, 95);
+  color: rgb(244, 250, 248);
+  width: 120px;
+
+  margin-top: 5px;
+}

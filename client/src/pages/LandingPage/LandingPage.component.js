@@ -6,7 +6,7 @@ import LoginButton from "../../components/LoginButton/LoginButton";
 import tripAPI from "../../utils/tripAPI";
 import Carousel from "../../components/Carousel/Carousel";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Container, Row, Col } from 'reactstrap';
+import { Container, Row, Col } from "reactstrap";
 import LikeApp from "../LikeApp/Likeapp";
 // import MyTripPage from "../MyTripPage/MyTripPage.component";
 export class LandingPage extends React.Component {
@@ -38,15 +38,9 @@ export class LandingPage extends React.Component {
       <div className="carousel">
         <Carousel />
         <div>
-          <LoginButton />
-          <div>
-            <LikeApp />
-          </div>
+          <LikeApp />
         </div>
       </div>
-   
-      
-      
     );
   }
 }

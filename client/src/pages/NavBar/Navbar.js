@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import LoginButton from "../../components/LoginButton/LoginButton";
 import "./Navbar.css";
 import { Navbar, NavbarBrand, Nav, NavItem, NavLink, Button } from "reactstrap";
 const Example = props => {
@@ -16,9 +17,7 @@ const Example = props => {
         <Collapse isOpen={isOpen} navbar> */}
         <Nav className="mr-auto" navbar>
           <NavItem>
-            <NavLink href="/">
-              HOME
-            </NavLink>
+            <NavLink href="/">HOME</NavLink>
           </NavItem>
           <NavItem>
             <NavLink href="/exp">TRIP</NavLink>
@@ -44,12 +43,19 @@ const Example = props => {
         {/* </Collapse> */}
         <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
           <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-              <a
-                href="/Trip">
-                  <Button>Log On</Button>
+            <li class="nav-item">
+              <div>
+                <a>
+                  <LoginButton />
+                </a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a href="/Trip">
+                <Button>Log On</Button>
               </a>
             </li>
+
             <li class="nav-item">
               <a
                 class="btn btn-outline-dark btn-social text-right rounded-circle"
