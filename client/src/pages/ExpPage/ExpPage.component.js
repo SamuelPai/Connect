@@ -90,11 +90,11 @@ export default class ExpPage extends React.Component {
           id={trip.id}
           />
         ))}
-        <Button color="primary" href="./Trip">
+        <Button color="primary" href="/Trip">
             Create Trip
           </Button>
       </Col>
-      <Col sm="6" mt="3">
+      <Col sm="6" >
       <h5>Trip Info</h5>
         <TripViewer
         id={this.state.tripById.id}
@@ -109,6 +109,9 @@ export default class ExpPage extends React.Component {
       <Row>
       <Col >
       <h5>Trip Activities</h5>
+      <Button color="primary" href="/CreateActivity">
+            Create Activity
+          </Button>
       <CardGroup>
       {this.state.activities.map(activity => (
         <ActivityViewer 

@@ -4,13 +4,12 @@ import { Jumbotron, Container } from "reactstrap";
 
 const Example = props => {
   return (
-    <div>
+    <div className="container">
       <Jumbotron className="display-3">
-        {/* <h1 className="display-3">Fluid jumbotron</h1>
+        <h4 className="AboutApp">About This App</h4>
         <p className="lead">
-          This is a modified jumbotron that occupies the entire horizontal space
-          of its parent.
-        </p> */}
+          Our App here is to guide you and make your trip relaxed. You can look for places you want to go. You can invite friends and family. You can poll on an activity to go, Food to eat, Day to spend. Plan ahead with ease and enjoy your trip.
+        </p> 
       </Jumbotron>
     </div>
   );

@@ -10,7 +10,7 @@ import { LandingPage } from "./pages/LandingPage/LandingPage.component";
 import Profile from "./components/Profile/Profile";
 import {MyTripPagePage} from "./pages/MyTripPagePage/MyTripPagePage.component";
 import PrivateRoute from "./components/PrivateRoute/PrivateRoute";
-import {TripPage} from "./pages/TripPage/TripPage.component";
+import TripPage from "./components/Trip/Trip";
 import {SearchPage} from "./pages/SearchPage/SearchPage.component";
 import NavBar from "./pages/NavBar/Navbar";
 import FooterPage from "./pages/FooterPage/Footer";

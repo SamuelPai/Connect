@@ -29,14 +29,6 @@ module.exports = {
       votesNo: {
         type: Sequelize.INTEGER
       },
-      tripId: {
-        type: Sequelize.INTEGER,
-        allowNull: false,
-        references: {
-          model: 'Trips',
-          key: 'id'
-        }
-      },
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE
