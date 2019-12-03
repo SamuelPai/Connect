@@ -1,8 +1,10 @@
 .navbar {
-  background: rgb(6, 236, 94);
-  color: white;
+  background: rgb(183, 231, 190);
+  color: black;
+  font-family: "Calistoga", cursive;
+  padding: 5px;
 }
-
+​
 .logo {
   text-align: center;
   display: block;

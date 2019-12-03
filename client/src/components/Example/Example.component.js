@@ -11,7 +11,7 @@ import {
     return (
         <div className="card">
         <div className="img-container">
-          <img alt={props.tripName} src={props.image} />
+          <img alt={props.tripName } src={props.image} />
         </div>
         <div className="content">
           <ul>

@@ -31,8 +31,8 @@ export class ExamplePage extends React.Component {
   render() {
     return (
     <Container>
-      <div>
-        {this.state.trips.map(trip => (
+      {/* <div> */}
+        {/* {this.state.trips.map(trip => (
           <Example
             id={trip.id}
             key={trip.id}
@@ -42,7 +42,7 @@ export class ExamplePage extends React.Component {
             description={trip.description}
           />
         ))}
-      </div>
+      </div> */}
     </Container>  
     );
   } 

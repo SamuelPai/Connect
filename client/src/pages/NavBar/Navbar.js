@@ -1,13 +1,9 @@
 import React, { useState } from "react";
 import "./Navbar.css";
-
-import { Navbar, NavbarBrand, Nav, NavItem, NavLink } from "reactstrap";
-
+import { Navbar, NavbarBrand, Nav, NavItem, NavLink, Button } from "reactstrap";
 const Example = props => {
   // const [isOpen, setIsOpen] = useState(false);
-
   // const toggle = () => setIsOpen(!isOpen);
-
   return (
     <div>
       <Navbar light expand="md">
@@ -25,10 +21,7 @@ const Example = props => {
             </NavLink>
           </NavItem>
           <NavItem>
-            <NavLink href="/MyTrip">TRIP</NavLink>
-          </NavItem>
-          <NavItem>
-            <NavLink href="/calenderpage">CALENDAR</NavLink>
+            <NavLink href="/exp">TRIP</NavLink>
           </NavItem>
           <NavItem>
             <NavLink href="/Search">SEARCH</NavLink>
@@ -48,10 +41,15 @@ const Example = props => {
         <div class="logo">
           <img src="/images/logo.png" alt="logo" width="150" height="40"></img>
         </div>
-
         {/* </Collapse> */}
         <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
           <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+              <a
+                href="/Trip">
+                  <Button>Log On</Button>
+              </a>
+            </li>
             <li class="nav-item">
               <a
                 class="btn btn-outline-dark btn-social text-right rounded-circle"
@@ -60,14 +58,6 @@ const Example = props => {
                 <i class="fa fa-fw fa-facebook"></i>
               </a>
             </li>
-            {/* <li class="list-inline-item">
-              <a
-                class="btn btn-outline-dark btn-social text-center rounded-circle"
-                href="https://www.linkedin.com"
-              >
-                <i class="fa fa-fw fa-linkedin"></i>
-              </a>
-            </li> */}
             <li class="nav-item">
               <a
                 class="btn btn-outline-dark btn-social text-right rounded-circle"
@@ -84,19 +74,10 @@ const Example = props => {
                 <i class="fa fa-fw fa-pinterest"></i>
               </a>
             </li>
-            {/* <li class="list-inline-item">
-              <a
-                class="btn btn-outline-dark btn-social text-center rounded-circle"
-                href="https://github.com"
-              >
-                <i class="fa fa-fw fa-github"></i>
-              </a>
-            </li> */}
           </ul>
         </div>
       </Navbar>
     </div>
   );
 };
-
 export default Example;

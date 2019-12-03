@@ -4,13 +4,22 @@ module.exports = (sequelize, DataTypes) => {
     title: DataTypes.STRING,
     link: DataTypes.STRING,
     notes: DataTypes.STRING,
-    eventDate: DataTypes.DATE,
+    eventDate: DataTypes.DATEONLY,
     confirmed: DataTypes.BOOLEAN,
     votesYes: DataTypes.INTEGER,
-    votesNo: DataTypes.INTEGER
+    votesNo: DataTypes.INTEGER,
+    tripId: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      references: {
+        model: 'Trips',
+        key: 'id'
+      }
+    }
   }, {});
   Activity.associate = function(models) {
     // associations can be defined here
+    Activity.belongsTo(models.Trips, {foreignKey: 'tripId', as:'trip'})
   };
   return Activity;
 };

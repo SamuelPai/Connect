@@ -10,18 +10,19 @@ import { LandingPage } from "./pages/LandingPage/LandingPage.component";
 import Profile from "./components/Profile/Profile";
 import {MyTripPagePage} from "./pages/MyTripPagePage/MyTripPagePage.component";
 import PrivateRoute from "./components/PrivateRoute/PrivateRoute";
-import {TripPage} from "./pages/TripPage/TripPage.component";
+import TripPage from "./components/Trip/Trip";
 import {SearchPage} from "./pages/SearchPage/SearchPage.component";
 import NavBar from "./pages/NavBar/Navbar";
 import FooterPage from "./pages/FooterPage/Footer";
 import CreateActivity from "./components/CreateActivity/CreateActivity";
+import ExpPage from './pages/ExpPage/ExpPage.component';
 
 function App() {
   return (
     <Router>
       <NavBar />
       <Switch>
-        <Route exact path="/" component={LandingPage} /> */}
+        <Route exact path="/" component={LandingPage} />
         <PrivateRoute path="/profile" component={Profile} />
         <Route exact path="/about" component={About} />
         <Route exact path="/cheese/:id" component={CheeseDetail} />
@@ -32,6 +33,8 @@ function App() {
         <Route exact path="/Search" component={SearchPage} />
         <Route exact path="/NavBar" component={NavBar} />
         <Route exact path="/CreateActivity" component={CreateActivity} />
+        <Route exact path="/exp" component={ExpPage} />
+        <Route exact path="/exp/:id" component={ExpPage} />
         <Route component={NoMatch} />
       </Switch>
       <FooterPage />
