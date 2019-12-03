@@ -9,7 +9,7 @@ import TripViewer from '../../components/ExPgComp/TripViewer/TripViewer.componen
 import ActivityViewer from '../../components/ExPgComp/ActivityViewer/ActivityViewer.component';
 // import Toggle from '../../components/ExPgComp/Toggle/Toggle.component';
 // Styles
-import { Container, Row, Col } from 'reactstrap';
+import { Container, Row, Col, Button, CardGroup} from 'reactstrap';
 import styles from './ExpPage.styles.scss';
 
 
@@ -83,16 +83,19 @@ export default class ExpPage extends React.Component {
     <Container>
     <Row>
       <Col sm="3" >
-        <h5>Trip Selector</h5>
+        <h5>My Trips</h5>
         {this.state.trips.map(trip => (
           <TripSelector 
           title={trip.title}
           id={trip.id}
           />
         ))}
+        <Button color="primary" href="./Trip">
+            Create Trip
+          </Button>
       </Col>
-      <Col sm="6">
-      <h5>Trip Viewer</h5>
+      <Col sm="6" mt="3">
+      <h5>Trip Info</h5>
         <TripViewer
         id={this.state.tripById.id}
         title={this.state.tripById.title}
@@ -102,8 +105,11 @@ export default class ExpPage extends React.Component {
         image={this.state.tripById.image}
         />
       </Col>
-      <Col sm="3">
-      <h5>Activity Viewer</h5>
+      </Row>
+      <Row>
+      <Col >
+      <h5>Trip Activities</h5>
+      <CardGroup>
       {this.state.activities.map(activity => (
         <ActivityViewer 
         title={activity.title}
@@ -113,8 +119,9 @@ export default class ExpPage extends React.Component {
         votesNo={activity.votesNo}
       />
        ))}
+       </CardGroup>
       </Col>
-    </Row>
+      </Row>
     </Container>
     );
   }
