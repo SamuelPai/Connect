@@ -54,7 +54,7 @@ class NewUserPage extends React.Component {
           <Input type="password" name="password" id="examplePassword" placeholder="Re-type Password" />
         </FormGroup>
 
-        <Button href="/exp">Submit</Button>
+        <Button href="/MyTrip">Submit</Button>
       </Form>
         </Card>
       </Col>
