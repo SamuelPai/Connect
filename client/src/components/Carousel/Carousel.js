@@ -7,13 +7,12 @@ import {
   CarouselIndicators,
   CarouselCaption
 } from 'reactstrap';
-
 const items = [
   {
     src:  '/images/explore.jpg',
     altText: 'Slide 1',
-    caption: 'Plan an Event',
-    header: 'Create a Trip '
+    caption: 'Plan an Event- There is a whole world to explore. Pack your backpack, your best friend and go',
+    header: 'Create a Trip with us and ease your journey'
   },
   {
     src: '/images/join.jpg',
@@ -28,28 +27,23 @@ const items = [
     caption: 'Plan your Day'
   },
 ];
-
 const Example = (props) => {
   const [activeIndex, setActiveIndex] = useState(0);
   const [animating, setAnimating] = useState(false);
-
   const next = () => {
     if (animating) return;
     const nextIndex = activeIndex === items.length - 1 ? 0 : activeIndex + 1;
     setActiveIndex(nextIndex);
   }
-
   const previous = () => {
     if (animating) return;
     const nextIndex = activeIndex === 0 ? items.length - 1 : activeIndex - 1;
     setActiveIndex(nextIndex);
   }
-
   const goToIndex = (newIndex) => {
     if (animating) return;
     setActiveIndex(newIndex);
   }
-
   const slides = items.map((item) => {
     return (
       <CarouselItem
@@ -58,11 +52,10 @@ const Example = (props) => {
         key={item.src}
       >
         <img className="image" src={item.src} alt={item.altText} />
-        <CarouselCaption captionText={item.caption} captionHeader={item.caption} />
+        <CarouselCaption captionText={item.caption} captionHeader={item.header} />
       </CarouselItem>
     );
   });
-
   return (
     <Carousel
       activeIndex={activeIndex}
@@ -76,10 +69,4 @@ const Example = (props) => {
     </Carousel>
   );
 }
-
 export default Example;
-
-
-
-  
-

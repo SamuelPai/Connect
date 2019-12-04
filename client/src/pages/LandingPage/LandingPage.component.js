@@ -1,15 +1,14 @@
 import React from "react";
 import { LandingPageProps } from "./LandingPage.propTypes";
 import { ReactRouterDetails } from "../../components/ReactRouterDetails/ReactRouterDetails.component";
-import styles from "./LandingPage.styles.scss";
+// import styles from "./LandingPage.styles.scss";
 import LoginButton from "../../components/LoginButton/LoginButton";
 import tripAPI from "../../utils/tripAPI";
 import Carousel from "../../components/Carousel/Carousel";
 import "bootstrap/dist/css/bootstrap.min.css";
-
+import { Container, Row, Col } from "reactstrap";
 import LikeApp from "../LikeApp/Likeapp";
 // import MyTripPage from "../MyTripPage/MyTripPage.component";
-
 export class LandingPage extends React.Component {
   constructor(props) {
     super(props);
@@ -23,11 +22,9 @@ export class LandingPage extends React.Component {
       }
     };
   }
-
   componentDidMount() {
     console.log("componentDidMount()", this.props);
   }
-
   componentDidUpdate(prevProps, prevState, prevSnapshot) {
     console.log(
       "componentDidUpdate(prevProps, prevState, prevSnapshot)",
@@ -36,21 +33,16 @@ export class LandingPage extends React.Component {
       prevSnapshot
     );
   }
-
   render() {
     return (
       <div className="carousel">
         <Carousel />
         <div>
-          <LoginButton />
-          <div>
-            <LikeApp />
-          </div>
+          <LikeApp />
         </div>
       </div>
     );
   }
 }
-
 LandingPage.propTypes = LandingPageProps.propTypes;
 LandingPage.defaultProps = LandingPageProps.defaultProps;

@@ -1,13 +1,20 @@
-/* .footer {
-  font-size: 20px;
-  height: 50px;
-  padding-bottom: 5px;
-  text-align: center;
- 
-} */
 .footer-area {
-  background: rgb(6, 236, 94);
-  color: white;
+  background: rgb(121, 86, 115);
+  color: rgb(15, 15, 15);
   /* padding: 30px 0; */
-  padding-bottom: 5px;
+  padding-bottom: -10%;
+  /* margin-top: 210; */
+  padding-top: 10px;
+  font-family: "Calistoga", cursive;
+  text-align: center;
+  font: bold;
+  font-family: "Satisfy", cursive;
+
+  font-family: "Great Vibes", cursive;
+
+  font-family: "Bad Script", cursive;
+
+  font-family: "Oleo Script", cursive;
+
+  font-family: "Carter One", cursive;
 }

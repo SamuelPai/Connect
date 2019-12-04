@@ -1,8 +1,30 @@
-.display-3 jumbotron {
-  background: rgb(28, 250, 58);
+.display-3 {
+  background: 73aecd;
+  text-align: left;
+  font-family: "Kalam", cursive;
+  color: rgb(182, 220, 252);
+  margin: 20px;
+  padding-top: 20px;
+  width: 800px;
+  height: 120px;
+  margin-left: 150px;
+  font-family: "Satisfy", cursive;
+
+  font-family: "Great Vibes", cursive;
+
+  font-family: "Bad Script", cursive;
+
+  font-family: "Oleo Script", cursive;
+
+  font-family: "Carter One", cursive;
+
+  font-family: "Merienda", cursive;
 }
-/* @media (min-width: 576px) */
-/* .jumbotron {
-  padding: 4rem 2rem;
-  background: yellow;
-} */
+.AboutApp {
+  font-size: 24px;
+  color: rgb(1, 54, 1);
+}
+.lead {
+  font-size: 15px;
+  color: rgb(16, 17, 17);
+}

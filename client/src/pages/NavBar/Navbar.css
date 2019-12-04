@@ -1,11 +1,25 @@
 .navbar {
-  background: rgb(6, 236, 94);
-  color: white;
-}
+  background: rgb(121, 86, 115);
 
-.logo {
+  padding: 5px;
+}
+​ .logo {
   text-align: center;
   display: block;
   margin-left: 20%;
   margin-right: auto;
+}
+.mr-auto {
+  font-family: "Satisfy", cursive;
+
+  font-family: "Great Vibes", cursive;
+
+  font-family: "Bad Script", cursive;
+
+  font-family: "Oleo Script", cursive;
+
+  font-family: "Carter One", cursive;
+}
+.navbar-light .navbar-nav .nav-link {
+  color: rgb(7, 7, 7);
 }

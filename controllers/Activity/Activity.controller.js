@@ -13,10 +13,11 @@ const getAll = (req, res) => {
 
 const create = (req, res) => {
   db.Activity.create({
-    title: "req.body.title",
-    link: "req.body.link",
-    notes: "req.body.notes",
-    eventDate: '2022-12-12',
+    title: req.body.title,
+    link: req.body.link,
+    notes: req.body.notes,
+    eventDate: req.body.eventDate,
+    tripId: req.body.tripId,
     confirmed: true,
     votesYes: 2,
     votesNo: 1
@@ -28,17 +29,31 @@ const create = (req, res) => {
 
 const getById = (req, res) => {
   const { id } = req.params;
-  db.Activity.findOne({
+  db.Activity.findAll({
     where: {
-      id: id
+      tripId: id
     }
   })
-  .then(function(dbActivity) {
+  .then(function(activity) {
     res.json({
-      dbActivity
+      activity
     })
   });
 };
+
+// const getActivityById = (req, res) => {
+//   const { id } = req.params;
+// db.Activity.findAll({
+//   where: {
+//     tripId: id
+//   }
+// })
+// .then(function(TripActvities) {
+//   res.json({
+//     TripActvities
+//   })
+// });
+// }
 
 const updateById = (req, res) => {
   const { id } = req.params;
@@ -69,5 +84,6 @@ module.exports = {
   create,
   getById,
   updateById,
-  deleteById
+  deleteById,
+  // getActivityById
 };

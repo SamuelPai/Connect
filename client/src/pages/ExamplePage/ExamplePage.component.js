@@ -1,6 +1,6 @@
 import React from "react";
+import { Container, Row, Col } from 'reactstrap';
 import Example from "../../components/Example/Example.component";
-import friends from '../../utils/friends.json';
 import tripAPI from '../../utils/tripAPI';
 
 export class ExamplePage extends React.Component {
@@ -23,20 +23,27 @@ export class ExamplePage extends React.Component {
       .catch(err => console.log(err));
   };
 
+  submitForm(e) {
+    e.preventDefault();
+    console.log('clicked')
+  }
+
   render() {
     return (
-      <div>
-        {this.state.trips.map(trip => (
+    <Container>
+      {/* <div> */}
+        {/* {this.state.trips.map(trip => (
           <Example
             id={trip.id}
             key={trip.id}
-            title={trip.title}
+            tripName={trip.tripName}
             image={trip.image}
-            Description={trip.Description}
-            location={trip.location}
+            destination={trip.destination}
+            description={trip.description}
           />
         ))}
-      </div>
+      </div> */}
+    </Container>  
     );
   } 
 }

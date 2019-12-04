@@ -32,10 +32,9 @@ const MyTrip = props => {
         <Row>
           <Col sm="6">
             <Card body>
-              <CardTitle>Special Title Treatment</CardTitle>
+              <CardTitle>Title: {props.tripName}</CardTitle>
               <CardText>
-                With supporting text below as a natural lead-in to additional
-                content.
+                {props.description}
               </CardText>
               <Button>Go somewhere</Button>
             </Card>

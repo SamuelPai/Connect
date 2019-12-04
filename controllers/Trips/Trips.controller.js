@@ -20,8 +20,8 @@ const create = (req, res) => {
     db.Trips.create({
     title: req.body.title,
     location: req.body.location,
-    description: req.body.description,
-    date: req.body.date,
+    description: req.body.Description,
+    date: req.body.tripDate,
     image: req.body.image
     }).then(function(dbTrips) {
       res.json(dbTrips);
@@ -35,9 +35,9 @@ const create = (req, res) => {
         id: id
       }
     })
-    .then(function(dbUser) {
+    .then(function(trip) {
       res.json({
-        dbUser
+        trip
       })
     });
   };

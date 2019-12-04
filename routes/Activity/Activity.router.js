@@ -12,4 +12,5 @@ router.get('/', controller.getAll);
 router.get('/:id', controller.getById);
 router.put('/:id', controller.updateById);
 router.delete('/:id', controller.updateById);
+// router.get('/trip/:id', controller.getActivityById);
 module.exports = router;
