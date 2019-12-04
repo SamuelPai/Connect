@@ -1,20 +1,21 @@
 import React from 'react';
 import { LogOnProps } from './LogOn.propTypes';
 import styles from './LogOn.styles.scss';
-import { Button, Form, FormGroup, Label, Input, Card, CardBody, Col, CardTitle, CardText } from 'reactstrap';
+import { Button, Form, FormGroup, Label, Input, Card, Row, Col, CardTitle, CardText } from 'reactstrap';
 
 const LogOn = props => {
     return (
 <div>
-      <Col sm="6">
-        <Card body>
-          <CardTitle>Special Title Treatment</CardTitle>
-          <CardText>With supporting text below as a natural lead-in to additional content.</CardText>
-          <Button>Go somewhere</Button>
-        </Card>
-      </Col>
+  <Row>
+    <Col sm="4">
 
-        {/* <Form >
+    </Col>
+      <Col sm="4">
+        <Card body className="theLogIn">
+          <CardTitle>
+            <strong>Log On</strong>
+          </CardTitle>
+        <Form >
         <FormGroup>
           <Label for="exampleEmail" hidden>Email</Label>
           <Input type="email" name="email" id="exampleEmail" placeholder="Email" />
@@ -25,8 +26,17 @@ const LogOn = props => {
           <Input type="password" name="password" id="examplePassword" placeholder="Password" />
         </FormGroup>
         {' '}
-        <Button>Submit</Button>
-      </Form> */}
+        <Button href="/exp">Submit</Button>
+        <CardText>
+          Not Registered? <a href="/newuser">Create a new account</a>
+        </CardText>
+      </Form>
+        </Card>
+      </Col>
+<Col sm="4">
+      
+    </Col>
+      </Row>
       </div>
     );
 };
