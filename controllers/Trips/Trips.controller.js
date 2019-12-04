@@ -20,13 +20,20 @@ const create = (req, res) => {
     db.Trips.create({
     title: req.body.title,
     location: req.body.location,
-    description: req.body.Description,
-    date: req.body.tripDate,
+    Description: req.body.Description,
+    tripDate: req.body.tripDate,
     image: req.body.image
     }).then(function(dbTrips) {
       res.json(dbTrips);
     });
   };
+
+  // const create = function(req, res) {
+  //   db.Trips
+  //     .create(req.body)
+  //     .then(dbTrips => res.json(dbTrips))
+  //     .catch(err => res.status(422).json(err));
+  // }
 
   const getById = (req, res) => {
     const { id } = req.params;

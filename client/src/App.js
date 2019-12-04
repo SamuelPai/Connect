@@ -28,12 +28,12 @@ function App() {
         <Route exact path="/cheese/:id" component={CheeseDetail} />
         <Route exact path="/example" component={ExamplePage} />
         <Route exact path="/landing" component={LandingPage} />
-        <Route exact path="/MyTrip" component={MyTripPagePage} />
+        <PrivateRoute exact path="/MyTrip" component={ExpPage} />
         <Route exact path="/Trip" component={TripPage} /> 
         <Route exact path="/Search" component={SearchPage} />
         <Route exact path="/NavBar" component={NavBar} />
         <Route exact path="/CreateActivity" component={CreateActivity} />
-        <Route exact path="/exp" component={ExpPage} />
+        {/* <PrivateRoute exact path="/exp" component={ExpPage} /> */}
         <Route exact path="/exp/:id" component={ExpPage} />
         <Route component={NoMatch} />
       </Switch>
