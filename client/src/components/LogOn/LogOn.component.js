@@ -26,7 +26,7 @@ const LogOn = props => {
           <Input type="password" name="password" id="examplePassword" placeholder="Password" />
         </FormGroup>
         {' '}
-        <Button href="/exp">Submit</Button>
+        <Button href="/MyTrip">Submit</Button>
         <CardText>
           Not Registered? <a href="/newuser">Create a new account</a>
         </CardText>
