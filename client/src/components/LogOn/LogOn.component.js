@@ -1,11 +1,20 @@
 import React from 'react';
 import { LogOnProps } from './LogOn.propTypes';
 import styles from './LogOn.styles.scss';
-import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
+import { Button, Form, FormGroup, Label, Input, Card, CardBody, Col, CardTitle, CardText } from 'reactstrap';
 
 const LogOn = props => {
     return (
-        <Form inline>
+<div>
+      <Col sm="6">
+        <Card body>
+          <CardTitle>Special Title Treatment</CardTitle>
+          <CardText>With supporting text below as a natural lead-in to additional content.</CardText>
+          <Button>Go somewhere</Button>
+        </Card>
+      </Col>
+
+        {/* <Form >
         <FormGroup>
           <Label for="exampleEmail" hidden>Email</Label>
           <Input type="email" name="email" id="exampleEmail" placeholder="Email" />
@@ -17,7 +26,8 @@ const LogOn = props => {
         </FormGroup>
         {' '}
         <Button>Submit</Button>
-      </Form>
+      </Form> */}
+      </div>
     );
 };
 
