@@ -51,7 +51,7 @@ const Example = props => {
               </div>
             </li>
             <li class="nav-item">
-              <a href="/Trip">
+              <a href="/logon">
                 <Button>Log On</Button>
               </a>
             </li>

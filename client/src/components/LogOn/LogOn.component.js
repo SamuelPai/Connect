@@ -19,8 +19,6 @@ const LogOn = props => {
         <Button>Submit</Button>
       </Form>
     );
-  }
-    );
 };
 
 LogOn.propTypes = LogOnProps.propTypes;

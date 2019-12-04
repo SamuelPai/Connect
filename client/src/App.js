@@ -16,6 +16,7 @@ import NavBar from "./pages/NavBar/Navbar";
 import FooterPage from "./pages/FooterPage/Footer";
 import CreateActivity from "./components/CreateActivity/CreateActivity";
 import ExpPage from './pages/ExpPage/ExpPage.component';
+import LogOnPage from './pages/LogOnPage/LogOnPage.component';
 
 function App() {
   return (
@@ -35,6 +36,8 @@ function App() {
         <Route exact path="/CreateActivity" component={CreateActivity} />
         <Route exact path="/exp" component={ExpPage} />
         <Route exact path="/exp/:id" component={ExpPage} />
+        <Route exact path="/logon" component={LogOnPage} />
+
         <Route component={NoMatch} />
       </Switch>
       <FooterPage />
