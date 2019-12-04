@@ -16,9 +16,7 @@ export class ExamplePage extends React.Component {
   getTrips = () => {
     tripAPI.getTrips()
       .then(res => {
-        var tripArray = res.data.trips
-        console.log(tripArray);
-        this.setState({ trips: tripArray })
+        this.setState({ trips: res.data })
       })
       .catch(err => console.log(err));
   };
@@ -34,8 +32,8 @@ export class ExamplePage extends React.Component {
       {/* <div> */}
         {/* {this.state.trips.map(trip => (
           <Example
-            id={trip.id}
-            key={trip.id}
+            // id={trip.id}
+            // key={trip.id}
             tripName={trip.tripName}
             image={trip.image}
             destination={trip.destination}

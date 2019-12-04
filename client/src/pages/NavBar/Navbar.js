@@ -20,7 +20,7 @@ const Example = props => {
             <NavLink href="/">HOME</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink href="/exp">TRIP</NavLink>
+            <NavLink href="/MyTrip">TRIP</NavLink>
           </NavItem>
           <NavItem>
             <NavLink href="/Search">SEARCH</NavLink>

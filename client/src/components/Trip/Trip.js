@@ -7,6 +7,12 @@ import { Container, Row, Col } from 'reactstrap';
 import { Jumbotron, Button } from 'reactstrap';
 import tripAPI from '../../utils/tripAPI';
 import axios from 'axios';
+import { Redirect } from 'react-router-dom';
+
+function redirect() {
+  return <Redirect to="/MyTrip" />
+
+}
 
 export default class TripPage extends React.Component {
   constructor(props) {
@@ -17,7 +23,8 @@ export default class TripPage extends React.Component {
       title: "",
       location: "",
       Description: "",
-      tripDate: ""
+      tripDate: "",
+      image: ""
     }
   }
   componentDidMount() {
@@ -45,16 +52,24 @@ handleLocationChange = (event) => {
 handleDescriptionChange = (event) => {
   event.preventDefault();
   this.setState({
-    Description: event.target.value,
+    Description: event.target.value
   })
 }
 
 handleTripDateChange = (event) => {
   event.preventDefault();
   this.setState({
-    tripDate: event.target.value,
+    tripDate: event.target.value
   })
 }
+
+handleImageChange = (event) => {
+  event.preventDefault();
+  this.setState({
+    image: event.target.value
+  })
+}
+
 
   handleSubmit(event) {
     event.preventDefault()
@@ -69,7 +84,6 @@ handleTripDateChange = (event) => {
   //     "tripDate": "2022-12-12",
   //     "image": "https://www.usnews.com/dims4/USNEWS/51a07af/2147483647/resize/1200x%3E/quality/85/?url=http%3A%2F%2Fcom-usnews-beam-media.s3.amazonaws.com%2F47%2Fcb%2F12d46a8a47fb9616e593f5667cf4%2F1.%20Florida%20Keys%20Getty.jpg"
   //     }
-
     fetch('/api/trips', {
       method: 'POST',
       body: JSON.stringify(data),
@@ -77,15 +91,17 @@ handleTripDateChange = (event) => {
         'Content-Type': 'application/json'
     }
     });
-    window.location.reload();
+    this.props.history.push('/MyTrip');
   };
+
+ 
 
   render() {
     return (
       <Container>
         <Form onSubmit={this.handleSubmit}>
           <FormGroup>
-            <Label htmlFor="title">title</Label>
+            <Label htmlFor="title">Title</Label>
             <Input
               type="text"
               name="title"
@@ -95,7 +111,7 @@ handleTripDateChange = (event) => {
             />
           </FormGroup>
           <FormGroup>
-            <Label htmlFor="location">location</Label>
+            <Label htmlFor="location">Location</Label>
             <Input
               type="text"
               name="location"
@@ -115,9 +131,19 @@ handleTripDateChange = (event) => {
             />
           </FormGroup>
           <FormGroup>
-            <Label htmlFor="tripDate">Trip Date</Label>
+            <Label htmlFor="image">Image</Label>
             <Input
               type="text"
+              name="image"
+              id="image"
+              placeholder="please paste the url"
+              onChange={this.handleImageChange}
+            />
+          </FormGroup>
+          <FormGroup>
+            <Label htmlFor="tripDate">Trip Date</Label>
+            <Input
+              type="date"
               name="tripDate"
               id="tripDate"
               placeholder="2022-12-12 00:00:00"

@@ -15,7 +15,6 @@ export default class CreateActivity extends React.Component {
   constructor(props) {
     super(props);
     this.handleSubmit = this.handleSubmit.bind(this);
-
     this.state = {
       title: "",
       link: "",
@@ -80,7 +79,6 @@ handleNotesChange = (event) => {
   //     "tripDate": "2022-12-12",
   //     "image": "https://www.usnews.com/dims4/USNEWS/51a07af/2147483647/resize/1200x%3E/quality/85/?url=http%3A%2F%2Fcom-usnews-beam-media.s3.amazonaws.com%2F47%2Fcb%2F12d46a8a47fb9616e593f5667cf4%2F1.%20Florida%20Keys%20Getty.jpg"
   //     }
-
     fetch('/api/activities', {
       method: 'POST',
       body: JSON.stringify(data),
@@ -88,7 +86,7 @@ handleNotesChange = (event) => {
         'Content-Type': 'application/json'
     }
     });
-    window.location.reload();
+    this.props.history.push('/MyTrip');
   };
 
   render() {

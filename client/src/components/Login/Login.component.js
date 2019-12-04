@@ -3,6 +3,7 @@ import { LoginProps } from './Login.propTypes';
 import styles from './Login.styles.scss';
 import { useAuth0 } from "../../react-auth0-spa";
 import { Link } from "react-router-dom";
+import { Redirect } from 'react-router-dom';
 
 
 
@@ -14,6 +15,7 @@ export const Login = props => {
             <button
               onClick={() =>
                 loginWithRedirect({})
+                
               }
             >
               Log in
@@ -26,7 +28,7 @@ export const Login = props => {
     {isAuthenticated && (
       <span>
         <Link to="/">Home</Link>&nbsp;
-        <Link to="/profile">Profile</Link>
+        {/* <Link to="/profile">Profile</Link> */}
       </span>
     )}
         </div>

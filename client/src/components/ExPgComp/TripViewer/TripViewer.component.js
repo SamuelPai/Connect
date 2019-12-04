@@ -7,20 +7,20 @@ const TripViewer = props => {
     return (
         <Media>
         <Media left href="#">
-          <Media object src={props.image} alt={props.title} />
+          <Media style={{width:"200px", height:"200px"}} object src={props.image} alt={props.title} />
         </Media>
         <Media body>
-          <Media heading>
+          <u><Media heading>
             {props.title}
+            </Media></u>
+            <Media body>
+            <strong>Location:</strong> {props.location}
             </Media>
             <Media body>
-            Location: {props.location}
+            <strong>Date:</strong> {props.tripDate}
             </Media>
             <Media body>
-            Date: {props.tripDate}
-            </Media>
-            <Media body>
-            Notes: {props.Description}
+            <strong>Notes:</strong> {props.Description}
             </Media>
         </Media>
       </Media>
