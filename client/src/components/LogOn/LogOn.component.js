@@ -1,11 +1,21 @@
 import React from 'react';
 import { LogOnProps } from './LogOn.propTypes';
 import styles from './LogOn.styles.scss';
-import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
+import { Button, Form, FormGroup, Label, Input, Card, Row, Col, CardTitle, CardText } from 'reactstrap';
 
 const LogOn = props => {
     return (
-        <Form inline>
+<div>
+  <Row>
+    <Col sm="4">
+
+    </Col>
+      <Col sm="4">
+        <Card body className="theLogIn">
+          <CardTitle>
+            <strong>Log On</strong>
+          </CardTitle>
+        <Form >
         <FormGroup>
           <Label for="exampleEmail" hidden>Email</Label>
           <Input type="email" name="email" id="exampleEmail" placeholder="Email" />
@@ -16,10 +26,18 @@ const LogOn = props => {
           <Input type="password" name="password" id="examplePassword" placeholder="Password" />
         </FormGroup>
         {' '}
-        <Button>Submit</Button>
+        <Button href="/exp">Submit</Button>
+        <CardText>
+          Not Registered? <a href="/newuser">Create a new account</a>
+        </CardText>
       </Form>
-    );
-  }
+        </Card>
+      </Col>
+<Col sm="4">
+      
+    </Col>
+      </Row>
+      </div>
     );
 };
 
