@@ -42,7 +42,7 @@ function App() {
 
         <Route component={NoMatch} />
       </Switch>
-      <FooterPage />
+      <FooterPage style={{position:"fixed", bottom:"0"}} />
     </Router>
   );
 }

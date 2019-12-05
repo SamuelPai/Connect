@@ -1,13 +1,20 @@
 import React, { useState } from "react";
 import LoginButton from "../../components/LoginButton/LoginButton";
 import "./Navbar.css";
-import { Navbar, NavbarBrand, Nav, NavItem, NavLink, Button } from "reactstrap";
+import { Navbar, Nav, NavItem, NavLink, Button, Jumbotron } from "reactstrap";
 const Example = props => {
   // const [isOpen, setIsOpen] = useState(false);
   // const toggle = () => setIsOpen(!isOpen);
   return (
     <div>
-      <Navbar light expand="md">
+    <Jumbotron style={{background:"rgb(231, 210, 228", padding:"0px", margin:"0px"}} fluid className="display">
+    <div class="logo">
+          <img style={{marginBottom:"30px"}} src="https://media.giphy.com/media/l1J9wQIaj0He3bTSU/giphy.gif" alt="gify" width="200" />
+          <img style={{marginLeft:"600px"}} src="/images/logo.png" alt="logo" width="250" height="80"></img>
+        </div>
+      </Jumbotron>
+    <div>
+      <Navbar style={{marginTop:"-32px"}} light expand="md">
         {/* <NavbarBrand href="/">
           <a href="/">
             <img src="logo.png" height="33" width="120" />
@@ -22,39 +29,28 @@ const Example = props => {
           <NavItem>
             <NavLink href="/MyTrip">TRIP</NavLink>
           </NavItem>
-          <NavItem>
-            <NavLink href="/Search">SEARCH</NavLink>
-          </NavItem>
-          {/* <UncontrolledDropdown nav inNavbar>
-              <DropdownToggle nav caret>
-                Options
-              </DropdownToggle>
-              <DropdownMenu right>
-                <DropdownItem>Option 1</DropdownItem>
-                <DropdownItem>Option 2</DropdownItem>
-                <DropdownItem divider />
-                <DropdownItem>Reset</DropdownItem>
-              </DropdownMenu>
-            </UncontrolledDropdown> */}
+   
+        
         </Nav>
-        <div class="logo">
-          <img src="/images/logo.png" alt="logo" width="150" height="40"></img>
-        </div>
+       
         {/* </Collapse> */}
         <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
           <ul class="navbar-nav ml-auto">
-            {/* <li class="nav-item">
-              <div>
-                <a>
-                  <LoginButton />
-                </a>
-              </div>
-            </li> */}
             <li class="nav-item">
+              <div>
+                <a>  <LoginButton />
+                </a>
+                
+               
+              </div>
+            </li>
+            {/* <li class="nav-item">
+          
               <a href="/logon">
                 <Button>Log On</Button>
+               
               </a>
-            </li>
+            </li> */}
 
             <li class="nav-item">
               <a
@@ -83,6 +79,8 @@ const Example = props => {
           </ul>
         </div>
       </Navbar>
+    </div>
+
     </div>
   );
 };

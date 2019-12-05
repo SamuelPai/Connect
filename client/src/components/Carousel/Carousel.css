@@ -1,6 +1,6 @@
 .image {
   /* width:75%; */
-  margin-top: 20px;
+  margin-top: 60px;
   margin-bottom: 20px;
   height: 400px;
   display: block;
@@ -10,11 +10,15 @@
 
   image-resolution: auto;
 }
-​ .carousel-control-prev {
-  margin-left: 200px;
+​ .carousel-control-prev-icon {
+  margin-left: -200px;
+  color: red;
+}
+​ .carousel-control-next-icon {
+  margin-right: 50px;
   color: rgb(3, 31, 14);
 }
-​ .carousel-control-next {
-  margin-right: 200px;
-  color: rgb(3, 31, 14);
+h3 {
+
+  font-family: "Merienda", cursive;
 }

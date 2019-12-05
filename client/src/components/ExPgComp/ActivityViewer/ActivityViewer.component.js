@@ -5,14 +5,14 @@ import { Card, Button, CardTitle, CardText, ButtonGroup  } from 'reactstrap';
 
 const ActivityViewer = props => {
     return (
-          <Card body>
+          <Card style={{margin:"10px"}} body>
             <CardTitle>Name: {props.title}</CardTitle>
             <CardText>Link: <a href={props.link}>{props.link}</a></CardText>
             <CardText>Notes: {props.notes}</CardText>
             <CardText className="text-center">Vote </CardText>
-            <ButtonGroup>
-            <Button>Yes {props.votesYes}</Button>
-            <Button>No {props.votesNo}</Button>
+            <ButtonGroup >
+            <Button style={{margin:"10px"}}>Yes {props.votesYes}</Button>
+            <Button style={{margin:"10px"}}>No {props.votesNo}</Button>
             </ButtonGroup>
           </Card>  
     );

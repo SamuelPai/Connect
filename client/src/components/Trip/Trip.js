@@ -101,7 +101,7 @@ handleImageChange = (event) => {
       <Container>
         <Form onSubmit={this.handleSubmit}>
           <FormGroup>
-            <Label htmlFor="title">Title</Label>
+            <Label style={{fontSize:"30px", fontFamily:"Roboto Condensed", textShadow:"4px 2px black", color:"rgb(244, 250, 248)"}} htmlFor="title">Title</Label>
             <Input
               type="text"
               name="title"
@@ -111,7 +111,7 @@ handleImageChange = (event) => {
             />
           </FormGroup>
           <FormGroup>
-            <Label htmlFor="location">Location</Label>
+            <Label style={{fontSize:"30px", fontFamily:"Roboto Condensed", textShadow:"4px 2px black", color:"rgb(244, 250, 248)"}} htmlFor="location">Location</Label>
             <Input
               type="text"
               name="location"
@@ -121,7 +121,7 @@ handleImageChange = (event) => {
             />
           </FormGroup>
           <FormGroup>
-            <Label htmlFor="Description">Description</Label>
+            <Label style={{fontSize:"30px", fontFamily:"Roboto Condensed", textShadow:"4px 2px black", color:"rgb(244, 250, 248)"}} htmlFor="Description">Description</Label>
             <Input
               type="text"
               name="Description"
@@ -131,7 +131,7 @@ handleImageChange = (event) => {
             />
           </FormGroup>
           <FormGroup>
-            <Label htmlFor="image">Image</Label>
+            <Label style={{fontSize:"30px", fontFamily:"Roboto Condensed", textShadow:"4px 2px black", color:"rgb(244, 250, 248)"}} htmlFor="image">Image</Label>
             <Input
               type="text"
               name="image"
@@ -141,7 +141,7 @@ handleImageChange = (event) => {
             />
           </FormGroup>
           <FormGroup>
-            <Label htmlFor="tripDate">Trip Date</Label>
+            <Label style={{fontSize:"30px", fontFamily:"Roboto Condensed", textShadow:"4px 2px black", color:"rgb(244, 250, 248)"}} htmlFor="tripDate">Trip Date</Label>
             <Input
               type="date"
               name="tripDate"
@@ -151,7 +151,8 @@ handleImageChange = (event) => {
             />
           </FormGroup>
           
-          <Button>Submit</Button>
+          <Button style={{marginTop: "10px", marginBottom: "10px"}}>Submit</Button>
+        
         </Form>
       </Container>
     );
