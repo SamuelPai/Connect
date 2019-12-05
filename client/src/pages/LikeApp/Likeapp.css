@@ -4,10 +4,11 @@
   font-family: "Kalam", cursive;
   color: rgb(182, 220, 252);
   margin: 20px;
+  margin-top: -3px;
   padding-top: 20px;
-  width: 800px;
-  height: 120px;
-  margin-left: 150px;
+  width: 980px;
+  height: 180px;
+  margin-left: 64px;
   font-family: "Satisfy", cursive;
 
   font-family: "Great Vibes", cursive;
@@ -21,10 +22,12 @@
   font-family: "Merienda", cursive;
 }
 .AboutApp {
-  font-size: 24px;
-  color: rgb(1, 54, 1);
+  font-size: 35px;
+  color: black;
+  text-align: center;
+  margin:10px;
 }
 .lead {
-  font-size: 15px;
+  font-size: 20px;
   color: rgb(16, 17, 17);
 }

@@ -85,19 +85,19 @@ export default class ExpPage extends React.Component {
 
   render() {
     return (
-      <Container>
+      <Container style={{height:"800px"}}>
         <Row>
-          <Col sm="3">
-            <h5>My Trips</h5>
+          <Col style={{marginTop:"10px"}} sm="3">
+            <h5 style={{fontSize:"30px", fontFamily:"Carter One, cursive", textShadow:"4px 2px black", color:"rgb(244, 250, 248)"}}>My Trips</h5>
             {this.state.trips.map(trip => (
               <TripSelector title={trip.title} id={trip.id} />
             ))}
-            <Button color="primary" href="/Trip">
+            <Button style={{width:"134px", marginTop:"10px"}} color="primary" href="/Trip">
               Create Trip
             </Button>
           </Col>
-          <Col sm="6">
-            <h5>Trip Info</h5>
+          <Col style={{marginTop:"10px"}} sm="6">
+            <h5 style={{fontSize:"30px", fontFamily:"Carter One, cursive", textShadow:"4px 2px black", color:"rgb(244, 250, 248)"}}>Trip Info</h5>
             <TripViewer
               id={this.state.tripById.id}
               title={this.state.tripById.title}
@@ -110,11 +110,11 @@ export default class ExpPage extends React.Component {
         </Row>
         <Row>
           <Col>
-            <h5>Trip Activities</h5>
-            <Button color="primary" href="/CreateActivity">
+            <h5 style={{fontSize: "30px", color:"rgb(244, 250, 248)", marginTop:"20px", marginBottom:"-1px", fontFamily:"Carter One, cursive", textShadow:"4px 2px black"}}>Trip Activities</h5>
+            <Button style={{marginTop:"2px"}} color="primary" href="/CreateActivity">
               Create Activity
             </Button>
-            <CardGroup>
+            <CardGroup style={{marginLeft:"-10px"}}> 
               {this.state.activities.map(activity => (
                 <ActivityViewer
                   title={activity.title}

@@ -17,13 +17,13 @@ const items = [
   {
     src: '/images/join.jpg',
     altText: 'Slide 2',
-    header: 'Reunite with a Loved Ones',
+    header: 'Reunite with Loved Ones',
     caption: 'Call your Colleagues, Friends and Family'
   },
   {
     src: '/images/star.jpg',
     altText: 'Slide 3',
-    header: 'Plan an activity,Make a Memmory',
+    header: 'Plan an activity, Make a Memory',
     caption: 'Plan your Day'
   },
 ];
