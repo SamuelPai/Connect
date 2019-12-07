@@ -12,4 +12,5 @@ module.exports = (sequelize, DataTypes) => {
     Trips.hasMany(models.Activity, {as: 'activities'})    
   };
   return Trips;
+  
 };
