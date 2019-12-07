@@ -1,0 +1,29 @@
+{
+  "development": {
+    "username": "root",
+    "password": "SamPai159$",
+    "database": "reunion2",
+    "host": "127.0.0.1",
+    "port": 3306,
+    "dialect": "mysql",
+    "operatorsAliases": false
+  },
+  "test": {
+    "username": "root",
+    "password": null,
+    "database": "database_test",
+    "host": "127.0.0.1",
+    "port": 3306,
+    "dialect": "mysql",
+    "operatorsAliases": false
+  },
+  "production": {
+  "username": "kargfpc8d5v4bc91",
+  "password": "o0e5jzhp7uc9z7d7",
+  "database": "ag9695dkhj3klk4q",
+  "host": "x3ztd854gaa7on6s.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+  "port": 3306,
+  "dialect": "mysql",
+  "operatorsAliases": false
+}
+}
