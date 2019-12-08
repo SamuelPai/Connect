@@ -5,12 +5,7 @@ import React from 'react';
 import { Form, FormGroup, Label, Input } from 'reactstrap';
 import { Container } from 'reactstrap';
 import { Button } from 'reactstrap';
-import { Redirect } from 'react-router-dom';
 
-function redirect() {
-  return <Redirect to="/MyTrip" />
-
-}
 
 export default class TripPage extends React.Component {
   constructor(props) {

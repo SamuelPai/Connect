@@ -1,7 +1,7 @@
 import React from "react";
 import LoginButton from "../../components/LoginButton/LoginButton";
 import "./Navbar.css";
-import { Navbar, Nav, NavItem, NavLink, Button, Jumbotron } from "reactstrap";
+import { Navbar, Nav, NavItem, NavLink, Jumbotron } from "reactstrap";
 const Example = props => {
   // const [isOpen, setIsOpen] = useState(false);
   // const toggle = () => setIsOpen(!isOpen);
