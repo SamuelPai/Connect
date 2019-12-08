@@ -38,7 +38,7 @@ const Example = props => {
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
               <div>
-                <a>  <LoginButton />
+                <a href={LoginButton}>  <LoginButton />
                 </a>
                 
                
