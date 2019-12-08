@@ -4,7 +4,7 @@ import { useAuth0 } from "../../react-auth0-spa";
 import "./LoginButton.css";
 // import "./LoginButton.css";
 function LoginButton() {
-  const { loading, isAuthenticated } = useAuth0();
+  const { loading } = useAuth0();
     if (loading) {
       return <div>Loading...</div>;
     }
