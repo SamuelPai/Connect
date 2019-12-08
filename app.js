@@ -4,17 +4,13 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var cors = require('cors');
-
+const PORT = process.env.PORT || 3000;
 var db = require("./models");
 
 var usersRouter = require('./routes/Members/Members.router');
 var tripRouter = require('./routes/trips/Trips.router');
 var activityRouter = require('./routes/Activity/Activity.router');
 var indexRouter = require('./routes/index');
-
-var port = normalizePort(process.env.PORT || '3000');
-app.set('port', port);
-
 
 var app = express();
 // SETUP CORS
@@ -31,10 +27,13 @@ app.use('/api/trips', tripRouter);
 app.use('/api/activities', activityRouter);
 app.use('/', indexRouter); //this should be the last imported route
 
+
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));
 });
+
+app.listen(PORT, () => console.log(`Server is listening on port ${PORT}...`));
 
 // error handler
 app.use(function(err, req, res, next) {
