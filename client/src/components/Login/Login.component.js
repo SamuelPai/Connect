@@ -1,8 +1,7 @@
 import React from 'react';
 import { LoginProps } from './Login.propTypes';
 import { useAuth0 } from "../../react-auth0-spa";
-import { Link } from "react-router-dom";
-import { Redirect } from 'react-router-dom';
+
 
 
 

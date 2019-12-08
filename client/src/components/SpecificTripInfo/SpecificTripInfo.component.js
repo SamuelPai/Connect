@@ -1,21 +1,12 @@
 import React from 'react';
 import { SpecificTripInfoProps } from './SpecificTripInfo.propTypes';
 import {
-    Container,
-    Row,
     Col,
-    Button,
     CardTitle,
     CardText,
     Card,
-    FormGroup,
-    Label,
-    Input,
-    Jumbotron,
-    Media,
     CardBody,
-    CardSubtitle,
-    Modal, ModalHeader, ModalBody, ModalFooter
+    CardSubtitle
   } from "reactstrap";
 
 export const SpecificTripInfo = props => {

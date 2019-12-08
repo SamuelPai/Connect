@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import LoginButton from "../../components/LoginButton/LoginButton";
 import "./Navbar.css";
 import { Navbar, Nav, NavItem, NavLink, Button, Jumbotron } from "reactstrap";

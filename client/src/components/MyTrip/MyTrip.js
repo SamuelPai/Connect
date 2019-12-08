@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./MyTrip.css";
 import {
   Container,
@@ -7,15 +7,7 @@ import {
   Button,
   CardTitle,
   CardText,
-  Card,
-  FormGroup,
-  Label,
-  Input,
-  Jumbotron,
-  Media,
-  CardBody,
-  CardSubtitle,
-  Modal, ModalHeader, ModalBody, ModalFooter
+  Card
 } from "reactstrap";
 // import { Card, Button, CardTitle, CardText } from "reactstrap";
 

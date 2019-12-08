@@ -1,6 +1,5 @@
 import React from "react";
 import { CreateActivityPageProps } from "./CreateActivityPage.propTypes";
-import { ReactRouterDetails } from "../../components/ReactRouterDetails/ReactRouterDetails.component";
 import CreateActivity from "../../components/CreateActivity/CreateActivity";
 export class CreateActivityPage extends React.Component {
   constructor(props) {

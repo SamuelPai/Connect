@@ -1,6 +1,5 @@
 import React from "react";
 import { Container, Row, Col } from 'reactstrap';
-import Example from "../../components/Example/Example.component";
 import tripAPI from '../../utils/tripAPI';
 
 export class ExamplePage extends React.Component {

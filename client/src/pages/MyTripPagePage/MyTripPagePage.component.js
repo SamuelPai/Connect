@@ -1,24 +1,10 @@
 import React from "react";
 import { MyTripPagePageProps } from "./MyTripPagePage.propTypes";
-import { ReactRouterDetails } from "../../components/ReactRouterDetails/ReactRouterDetails.component";
-import Jumbotron from "../../components/MyTrip/MyTrip";
-import { Container, Row, Col, Button } from "reactstrap";
+import { Row, Col, Button } from "reactstrap";
 import MyTrip from "../../components/MyTrip/MyTrip";
 import tripAPI from '../../utils/tripAPI';
 import activitiesAPI from "../../utils/activityAPI";
 import {Activities} from "../../components/Activities/Activities.component";
-import {
-  CardTitle,
-  CardText,
-  Card,
-  FormGroup,
-  Label,
-  Input,
-  Media,
-  CardBody,
-  CardSubtitle,
-  Modal, ModalHeader, ModalBody, ModalFooter
-} from "reactstrap";
 import {SpecificTripInfo} from "../../components/SpecificTripInfo/SpecificTripInfo.component";
 
 

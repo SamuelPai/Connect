@@ -2,11 +2,9 @@ import React from 'react';
 // import { ReactRouterDetails } from '../../components/ReactRouterDetails/ReactRouterDetails.component';
 // import styles from './TripPage.styles.scss';
 // import Trip from '../../components/Trip/Trip'
-import { Form, FormGroup, Label, Input, FormText } from 'reactstrap';
-import { Container, Row, Col } from 'reactstrap';
-import { Jumbotron, Button } from 'reactstrap';
-import tripAPI from '../../utils/tripAPI';
-import axios from 'axios';
+import { Form, FormGroup, Label, Input } from 'reactstrap';
+import { Container } from 'reactstrap';
+import { Button } from 'reactstrap';
 import { Redirect } from 'react-router-dom';
 
 function redirect() {

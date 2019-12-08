@@ -1,6 +1,6 @@
 import React from "react";
 import "./Likeapp.css";
-import { Jumbotron, Container } from "reactstrap";
+import { Jumbotron } from "reactstrap";
 
 const Example = props => {
   return (
