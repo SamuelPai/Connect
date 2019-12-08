@@ -1,7 +1,6 @@
 import React from 'react';
 import { TripPageProps } from './TripPage.propTypes'
 // import { ReactRouterDetails } from '../../components/ReactRouterDetails/ReactRouterDetails.component';
-// import styles from './TripPage.styles.scss';
 // import Trip from '../../components/Trip/Trip'
 
 import { Form, FormGroup, Label, Input, FormText } from 'reactstrap';
