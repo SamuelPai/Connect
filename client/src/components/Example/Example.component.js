@@ -1,6 +1,5 @@
 import React from 'react';
 import { ExampleProps } from './Example.propTypes';
-import styles from './Example.styles.scss';
 import {
     Card, CardImg, CardText, CardBody,
     CardTitle, CardSubtitle, Button

@@ -1,6 +1,5 @@
 import React from 'react';
 import { ActivityViewerProps } from './ActivityViewer.propTypes';
-import styles from './ActivityViewer.styles.scss';
 import { Card, Button, CardTitle, CardText, ButtonGroup  } from 'reactstrap';
 
 const ActivityViewer = props => {
