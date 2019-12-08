@@ -1,5 +1,4 @@
 const expect = require('chai').expect;
-const Trips = require('./Trips.router');
 
 describe('Router - Trips', () => {
   beforeEach(() => {
