@@ -1,6 +1,5 @@
 import React from 'react';
 import { TripSelectorProps } from './TripSelector.propTypes';
-import styles from './TripSelector.styles.scss';
 import { ListGroup, ListGroupItem } from 'reactstrap';
 
 

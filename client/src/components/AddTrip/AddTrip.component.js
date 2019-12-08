@@ -1,6 +1,5 @@
 import React from 'react';
 import { AddTripProps } from './AddTrip.propTypes';
-import styles from './AddTrip.styles.scss';
 import { Jumbotron, Container } from 'reactstrap';
 
 export const AddTrip = props => {

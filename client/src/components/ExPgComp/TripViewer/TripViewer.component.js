@@ -1,6 +1,5 @@
 import React from 'react';
 import { TripViewerProps } from './TripViewer.propTypes';
-import styles from './TripViewer.styles.scss';
 import { Media, Card } from 'reactstrap';
 
 const TripViewer = props => {

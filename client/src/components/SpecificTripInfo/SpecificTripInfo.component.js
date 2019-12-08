@@ -1,6 +1,5 @@
 import React from 'react';
 import { SpecificTripInfoProps } from './SpecificTripInfo.propTypes';
-import styles from './SpecificTripInfo.styles.scss';
 import {
     Container,
     Row,

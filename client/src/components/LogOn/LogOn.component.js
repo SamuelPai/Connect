@@ -1,6 +1,5 @@
 import React from 'react';
 import { LogOnProps } from './LogOn.propTypes';
-import styles from './LogOn.styles.scss';
 import { Button, Form, FormGroup, Label, Input, Card, Row, Col, CardTitle, CardText } from 'reactstrap';
 
 const LogOn = props => {
