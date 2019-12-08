@@ -27,6 +27,7 @@ app.use('/api/trips', tripRouter);
 app.use('/api/activities', activityRouter);
 app.use('/', indexRouter); //this should be the last imported route
 
+app.set('port', process.env.PORT || 3000);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
