@@ -1,5 +1,4 @@
 import React from "react";
-import { Redirect } from 'react-router-dom';
 import { Login } from "../Login/Login.component";
 import { useAuth0 } from "../../react-auth0-spa";
 import "./LoginButton.css";

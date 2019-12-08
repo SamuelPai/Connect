@@ -5,16 +5,8 @@ import {
     Row,
     Col,
     Button,
-    CardTitle,
-    CardText,
     Card,
-    FormGroup,
     Label,
-    Input,
-    Jumbotron,
-    Media,
-    CardBody,
-    CardSubtitle,
     Modal, ModalHeader, ModalBody, ModalFooter
 } from "reactstrap";
 

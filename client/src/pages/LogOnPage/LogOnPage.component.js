@@ -1,6 +1,5 @@
 import React from 'react';
 import { LogOnPageProps } from './LogOnPage.propTypes'
-import { ReactRouterDetails } from '../../components/ReactRouterDetails/ReactRouterDetails.component';
 import LogOn from '../../components/LogOn/LogOn.component'
 
 class LogOnPage extends React.Component {

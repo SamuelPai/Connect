@@ -3,10 +3,9 @@ import { TripPageProps } from './TripPage.propTypes'
 // import { ReactRouterDetails } from '../../components/ReactRouterDetails/ReactRouterDetails.component';
 // import Trip from '../../components/Trip/Trip'
 
-import { Form, FormGroup, Label, Input, FormText } from 'reactstrap';
-import { Container, Row, Col } from 'reactstrap';
-import { Jumbotron, Button } from 'reactstrap';
-import tripAPI from '../../utils/tripAPI';
+import { Form, FormGroup, Label, Input } from 'reactstrap';
+import { Container } from 'reactstrap';
+import { Button } from 'reactstrap';
 import axios from 'axios';
 
 

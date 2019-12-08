@@ -1,9 +1,5 @@
 import React from 'react';
 import { ExampleProps } from './Example.propTypes';
-import {
-    Card, CardImg, CardText, CardBody,
-    CardTitle, CardSubtitle, Button
-  } from 'reactstrap';
 
 
   function Example(props) {
