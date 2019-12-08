@@ -1,7 +1,6 @@
 import React from "react";
 import { MyTripPagePageProps } from "./MyTripPagePage.propTypes";
 import { ReactRouterDetails } from "../../components/ReactRouterDetails/ReactRouterDetails.component";
-import styles from "./MyTripPagePage.styles.scss";
 import Jumbotron from "../../components/MyTrip/MyTrip";
 import { Container, Row, Col, Button } from "reactstrap";
 import MyTrip from "../../components/MyTrip/MyTrip";

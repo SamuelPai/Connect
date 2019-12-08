@@ -10,7 +10,6 @@ import ActivityViewer from "../../components/ExPgComp/ActivityViewer/ActivityVie
 // import Toggle from '../../components/ExPgComp/Toggle/Toggle.component';
 // Styles
 import { Container, Row, Col, Button, CardGroup } from "reactstrap";
-import styles from "./ExpPage.styles.scss";
 
 export default class ExpPage extends React.Component {
   state = {

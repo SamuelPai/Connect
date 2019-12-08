@@ -1,7 +1,6 @@
 import React from 'react';
 import { NewUserPageProps } from './NewUserPage.propTypes'
 import { ReactRouterDetails } from '../../components/ReactRouterDetails/ReactRouterDetails.component';
-import styles from './NewUserPage.styles.scss';
 import { Button, Form, FormGroup, Label, Input, Card, Row, Col, CardTitle, CardText } from 'reactstrap';
 
 
