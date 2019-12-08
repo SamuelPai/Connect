@@ -12,6 +12,10 @@ var tripRouter = require('./routes/trips/Trips.router');
 var activityRouter = require('./routes/Activity/Activity.router');
 var indexRouter = require('./routes/index');
 
+var port = normalizePort(process.env.PORT || '3000');
+app.set('port', port);
+
+
 var app = express();
 // SETUP CORS
 app.options('*', cors());
@@ -26,8 +30,6 @@ app.use('/api/users', usersRouter);
 app.use('/api/trips', tripRouter);
 app.use('/api/activities', activityRouter);
 app.use('/', indexRouter); //this should be the last imported route
-
-app.set('port', process.env.PORT || 3000);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
