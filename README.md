@@ -44,10 +44,3 @@ N/A at this time
 * **Max Reinmueller**
 * **Karishma Hattar**
 
-## License
-
-
-
-## Acknowledgments
-
-* The instructional staff at the UCSD Extention's Web Development Bootcamp
